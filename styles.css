@@ -1,0 +1,165 @@
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body *:not(h1){
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    color: #7e7c7c;
+    background-color: #fff;
+  }
+  
+  /* Header */
+  header {
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #000;
+    margin: 0;
+    font-size: 40px;
+    font-weight: normal;
+    text-align: center;
+    font-size: 80px;
+    margin-bottom: 10px;
+  }
+  
+  nav {
+    width: 100%;
+  }
+
+  header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  header nav li {
+    margin: 0 10px;
+  }
+  
+  header nav a {
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  header nav a:hover {
+    color:#999
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 20;
+    left: 50;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 1;
+}
+
+.dropdown-menu li {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.dropdown-menu li:last-child {
+    margin-bottom: 0;
+}
+  
+  /* Main */
+  main {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    
+  }
+
+  h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .col {
+    text-align: center;
+  }
+  
+  /* Grillas */
+  .productos,
+  .novedades {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .productos li,
+  .novedades li {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .productos li img,
+  .novedades li img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .productos li h3,
+  .novedades li h3 {
+    margin: 10px 0;
+    font-size: 24px;
+  }
+  
+  .productos li p,
+  .novedades li p {
+    margin: 10px 0;
+  }
+  
+  .productos li button,
+  .novedades li button {
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
+  .productos li button:hover,
+  .novedades li button:hover {
+    background-color: #000;
+  }
+  
+  .novedades li button {
+    color: #333;
+  }
+  
+  .novedades li button:hover {
+    background-color: #999;
+  }
+  
+  /* Footer */
+  footer {
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  footer p {
+    margin: 0;
+  }
