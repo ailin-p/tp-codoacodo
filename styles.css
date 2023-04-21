@@ -105,6 +105,10 @@
     margin: 10px;
   }
 
+  button {
+    margin: 10px;
+  }
+
   .productos li,
   .novedades li {
     background-color: #fff;
