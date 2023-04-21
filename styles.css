@@ -9,7 +9,7 @@
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     line-height: 1.5;
-    color: #7e7c7c;
+    color: #000000;
     background-color: #fff;
   }
   
@@ -21,16 +21,15 @@
 
   header img {
     text-align: center;
-    margin-left: 10px;
     display: inline-block;
-    width: 80px;
-    height: 80px;
+    width: 75px;
+    height: 75px;
   }
   
   h1 {
     font-family: 'Bebas Neue', cursive;
     display: inline-block;
-    color: #ff9900;
+    color: #f7a81c;
     margin: 0;
     font-size: 80px;
     letter-spacing: 2px;
@@ -61,7 +60,8 @@
   }
   
   header nav a:hover {
-    color:#999
+    background-color: #fde9e2;
+    box-shadow: 0px 0px 83px 18px rgba(255, 97, 0, 0.33);
   }
 
   .dropdown:hover .dropdown-menu {
@@ -69,6 +69,7 @@
 }
 
 .dropdown-menu {
+    text-align: justify;
     display: none;
     position: absolute;
     top: 20;
