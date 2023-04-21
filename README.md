@@ -1,5 +1,5 @@
 # tp-codoacodo
 
-# NORMAS INTERNAS
+## NORMAS INTERNAS
 
-# 1. Cada uno trabaja sobre una rama.
+1. Cada uno trabaja sobre una rama
