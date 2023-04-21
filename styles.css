@@ -105,6 +105,10 @@
     margin: 10px;
   }
 
+  button {
+    margin: 10px;
+  }
+
   .productos li,
   .novedades li {
     background-color: #fff;
@@ -153,6 +157,46 @@
     background-color: #999;
   }
   
+  /* Formulario */
+
+  form {
+    max-width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  textarea {
+    height: 150px;
+  }
+  
+  button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
+
   /* Footer */
   footer {
     color: #fff;
