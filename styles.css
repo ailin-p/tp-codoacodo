@@ -11,17 +11,15 @@
     line-height: 1.5;
     color: #000000;
     background-color: #fff;
+    text-align: center;
   }
   
   /* Header */
   header {
     padding: 20px;
-    text-align: center;
   }
 
   header img {
-    text-align: center;
-    display: inline-block;
     width: 75px;
     height: 75px;
   }
@@ -88,23 +86,25 @@
   }
 
   h2 {
+    margin: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-
-  .col {
-    text-align: center;
-  }
   
   /* Grillas */
-  .productos,
-  .novedades {
+
+  .productos, .novedades {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
   }
-  
+
+  .producto {
+    padding: 10px;
+    margin: 10px;
+  }
+
   .productos li,
   .novedades li {
     background-color: #fff;
