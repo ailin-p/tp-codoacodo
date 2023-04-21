@@ -7,8 +7,8 @@
   
   body *:not(h1){
     font-family: 'Playfair Display', serif;
-    font-size: 20px;
-    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: 30px;
     line-height: 1.5;
     color: #7e7c7c;
     background-color: #fff;
@@ -29,13 +29,15 @@
   }
   
   h1 {
-    letter-spacing: 7px;
+    font-family: 'Playfair Display', serif;
     display: inline-block;
     color: #ff9900;
     margin: 0;
-    font-weight: normal;
-    text-align: center;
     font-size: 80px;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    font-style: italic;
+    text-align: center;
     margin-bottom: 10px;
   }
   
