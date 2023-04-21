@@ -160,16 +160,14 @@
   /* Formulario */
 
   form {
-    width: 50%;
+    max-width: 50%;
     margin: 0 auto;
     padding: 20px;
-    border-radius: 5px;
   }
   
   label {
     display: block;
     margin-bottom: 10px;
-    font-weight: bold;
   }
   
   input[type="text"],
@@ -178,9 +176,6 @@
     display: block;
     width: 100%;
     padding: 10px;
-    border: none;
-    border-radius: 3px;
-    box-sizing: border-box;
     margin-bottom: 20px;
   }
   
