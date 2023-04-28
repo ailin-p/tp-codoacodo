@@ -115,7 +115,7 @@ main {
 
 .productos {
 	grid-column: 2 / span 3;
-	grid-row: 1 / span 4;
+	grid-row: 1;
 }
 /*
 .productos h2 {
@@ -191,7 +191,9 @@ main {
   }
   
 .novedad {
-	border: 1px solid #ccc;
+	border: 3px solid #ccc;
+	border-color: #813772;
+	border-radius: 10px;
 	padding: 10px;
 	margin: 10px;
   }
