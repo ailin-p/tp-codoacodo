@@ -4,11 +4,66 @@
     margin: 0;
     padding: 0;
   }
-  /* Colores de la paleta 07*/
+/* Colores de la paleta 07. Esto es más bien una guía, no estoy usando las clases. */
 .color1 {color: #000000;}
 .color2 {color: #062f4f;}
 .color3 {color: #813772;}
 .color4 {color: #b82601;}
+
+/* Grid Columns */
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+	float: left;
+	padding: 10px;
+}
+@media only screen and (max-width: 1300px) {	
+.col-m-1 {width: 8.33%;}
+.col-m-2 {width: 16.66%;}
+.col-m-3 {width: 25%;}
+.col-m-4 {width: 33.33%;}
+.col-m-5 {width: 41.66%;}
+.col-m-6 {width: 50%;}
+.col-m-7 {width: 58.33%;}
+.col-m-8 {width: 66.66%;}
+.col-m-9 {width: 75%;}
+.col-m-10 {width: 83.33%;}
+.col-m-11 {width: 91.66%;}
+.col-m-12 {width: 100%;}
+}
+
+@media only screen and (max-width: 900px) {	
+.col-s-1 {width: 8.33%;}
+.col-s-2 {width: 16.66%;}
+.col-s-3 {width: 25%;}
+.col-s-4 {width: 33.33%;}
+.col-s-5 {width: 41.66%;}
+.col-s-6 {width: 50%;}
+.col-s-7 {width: 58.33%;}
+.col-s-8 {width: 66.66%;}
+.col-s-9 {width: 75%;}
+.col-s-10 {width: 83.33%;}
+.col-s-11 {width: 91.66%;}
+.col-s-12 {width: 100%;}
+}
+
+@media only screen and (max-width: 650px) {
+	[class*="col-"] {
+		width: 100%;
+	}
+}
   
 body {
     font-family: 'Roboto', sans-serif;
@@ -36,12 +91,15 @@ h2 {
     justify-content: center;
     align-items: center;*/
   }
+span {
+  display: inline-block;
+
+  }
   
   /* Header */
 header {
     padding: 20px;
     background-color: #062f4f;
-
   }
   
 
@@ -99,117 +157,86 @@ nav a:hover {
 
   /* Main */
 main {
-    max-width: 100%;
     margin: 0 auto;
     padding: 20px;
+    height: 100%
     
   }
   
   /* Grillas */
-  
+ 
 .container {
-	display: grid;
-	grid-template-columns: auto auto auto auto;
-	grid-template-rows: auto auto auto auto;
+	grid-gap: 20px;	
 }
 
 .productos {
-	grid-column: 2 / span 3;
-	grid-row: 1;
-}
-/*
-.productos h2 {
-	grid-column: 1 / span 3;
-	grid-row: 1;
-}
-*/
-.novedades {
-	grid-column: 1;
-	grid-row: 1 / span 4;
-}
-/*
-.novedades h2 {
-	grid-column: 1;
-	grid-row: 1;
-}
-*/
-
-.productos {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: 1fr;
-  }
-  
-.novedades {
-	display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-auto-rows: 1fr;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	grid-gap: 20px;
+	align-items: stretch;
   }
   
 .producto {
-	border: 3px solid #ccc;
-	border-color: #b82601;
+	width: 300px;
+	border: 2px solid #813772;
+	box-shadow: 2px 2px 6px 0px  #813772;
 	border-radius: 10px;
-	padding: 10px;
-	margin: 10px;
-  }
+}
 
-.productos, .novedades {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    padding: 20px;
-    text-align: center;
+.producto img {
+  max-width: 100%;
+}
+
+.producto button {
+ 	color: white;
+ 	background-color: #813772;
+ 	padding: 10px 20px;
+ 	border: none;
+ 	border-radius: 3px;
   }
   
-.productos img, .novedades img {
-    max-width: 80%;
-    height: auto;
-    border: 1px solid #ccc;
-    /*margin: 10%;*/
-  }
+.novedades {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	grid-gap: 20px;
+	align-items: stretch;
+}
   
-.productos h3, .novedades h3 {
-    margin: 10px 0;
-    font-size: 24px;
-  }
-  
-.productos p, .novedades p {
-    margin: 10px 0;
-  }
-  
-.productos button, .novedades button {
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 20px;
-  }
-  
-.productos button:hover, .novedades button:hover {
-    background-color: #000;
-  }
-  
-.novedad {
-	border: 3px solid #ccc;
-	border-color: #813772;
+.novedad  {
+	width: 300px;
+	border: 2px solid #b82601;
+	box-shadow: 2px 2px 6px 0px  #b82601;
 	border-radius: 10px;
-	padding: 10px;
-	margin: 10px;
-  }
-  
+}
+
+.novedad img {
+  max-width: 100%;
+}
+
 .novedad button {
-    color: #333;
+ 	color: white;
+ 	background-color: #b82601;
+ 	padding: 10px 20px;
+ 	border: none;
+ 	border-radius: 3px;
   }
   
-.novedad button:hover {
-    background-color: #999;
+  
+.text {
+  padding: 0 20px 20px;
+}
+
+.text button {
+  background: gray;
+  border: 0;
+  color: white;
+  padding: 10px;
+  width: 100%;
   }
   
-button {
-    margin: 10px;
-  }
-  
+
   /* Formulario */
 
 form {
@@ -250,6 +277,8 @@ button[type="submit"]:hover {
 
   /* Footer */
 footer {
+	display: inline-block;
+	width: 100%;
     color: #fff;
     background-color: #062f4f;
     text-align: center;

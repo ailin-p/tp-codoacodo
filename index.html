@@ -5,75 +5,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/img/favicon.png">
- 
-    <link rel="stylesheet" type="text/css" href="styles2.css">
-  <!--  
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
     <title>Mascotienda</title>
 </head>
 <body>
     <header></header>
-    <table width="100%">
-    	<tr>
-    		<td width="20%"><h2>Últimas novedades</h2></td>
-    		<td colspan="3"><h2>Productos destacados</h2></td>
-    	</tr>
-    </table>   	
-     
-    <main class="container">
-      
-        <section class="productos">
-        
-            <div class="producto">
-                <img src="img/TransportadoraHipster.png" alt="Transportadora Hipster">
-                <h3>Transportadora Hipster</h3>
-                <button>Comprar</button>
-            </div>
-            <div class="producto">
-                <img src="img/JaulaAcrilicaAlvin.png" alt="Jaula Acrílica Alvin">
-                <h3>Jaula Acrílica Alvin</h3>
-                <button>Comprar</button>
-            </div>
-            <div class="producto">
-                <img src="" alt="prod_3">
-                <h3>Producto 3</h3>
-                <button>Comprar</button>
-            </div>
-            <div class="producto">
-                <img src="" alt="prod_4">
-                <h3>Producto 4</h3>
-                <button>Comprar</button>
-            </div>
-        </section>
 
-        <section class="novedades">
+  <main class="container">
         
+    <div class="col-3 col-m-5 col-s-6">
+    <h2>Últimas novedades</h2>
+      <section class="novedades">
+		
+          <article>
             <div class="novedad">
                 <img src="img/ComederoCircular.jpg" alt="Comedero Circular">
                 <h3>Comedero Circular</h3>
+                <p>Una descripción cualquiera que se extienda mas de dos renglones</p>
                 <button>Ver más</button>
             </div>
+          </article>
+          <article>
                 <div class="novedad">
-                    <img src="" alt="Novedad 2">
-                    <h3>Novedad 2</h3>
-                    <button>Ver más</button>
-                </div>
-                <div class="novedad">
-                    <img src="" alt="Novedad 3">
-                    <h3>Novedad 3</h3>
-                    <button>Ver más</button>
-                </div>
+                <img src="img/JaulaAcrilicaAlvin.png" alt="Jaula Acrílica Alvin">
+                <h3>Jaula Acrílica Alvin</h3>
+                <p>Una descripción cualquiera que se extienda mas de dos renglones</p>
+                <button>Ver más</button>
             </div>
-        </section>
-    </main>
-
+          </article>
+          <article>
+                <div class="novedad">
+                <img src="img/TransportadoraHipster.png" alt="Transportadora Hipster">
+                <h3>Transportadora Hipster</h3>
+                <p>Una descripción cualquiera que se extienda mas de dos renglones</p>
+                <button>Ver más</button>
+            </div>
+          </article>      
+      </section>
+      </div>
+      
+     <div class="col-9 col-m-7 col-s-6">  
+     <h2>Productos destacados</h2>
+      <section class="productos">
+			
+        <article class="producto">
+                <img src="img/TransportadoraHipster.png" alt="Transportadora Hipster">
+                <h3>Transportadora Hipster</h3>
+                <p>Una descripción cualquiera que se extienda mas de dos renglones</p>
+                <button>Comprar</button>
+          </article>
+          <article class="producto">
+                <img src="img/JaulaAcrilicaAlvin.png" alt="Jaula Acrílica Alvin">
+                <h3>Jaula Acrílica Alvin</h3>
+                <p>Una descripción cualquiera que se extienda mas de dos renglones</p>
+                <button>Comprar</button>
+          </article>
+          <article class="producto">
+                <img src="img/JaulaAcrilicaAlvin.png" alt="Jaula Acrílica Alvin">
+                <h3>Jaula Acrílica Alvin</h3>
+                <p>Una descripción cualquiera que se extienda mas de dos renglones</p>
+                <button>Comprar</button>
+          </article>
+          <article class="producto">
+                <img src="img/ComederoCircular.jpg" alt="Comedero Circular">
+                <h3>Comedero Circular</h3>
+                <p>Una descripción cualquiera que se extienda mas de dos renglones</p>
+                <button>Comprar</button>
+          </article>         
+       </section>
+     </div>
+     
+   </main>
     <footer></footer>
 
 <script src="main.js"></script>
