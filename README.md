@@ -3,12 +3,19 @@
 ## NORMAS INTERNAS
 
 1. Cada uno trabaja sobre una rama
+2. Cada imagen debe:
+		a. guardarse en la carpeta img/
+		b. El tamaño de la imagen debe ser de 300 x 300 px
+		c. Cada imagen lleva por nombre el mismo que el del producto (sin espacios)
+3. Las categorías de animales son: gato, perro, otroAnimal (estos nombres se usan para los tags de cada producto)
+4. Las categorías de productos son: alimento, medicamento, accesorio (estos nombres se usan para los tags de cada producto)
+5. Se usa un tag novedad, para cada producto que se desea que aparezca en dicha categoría.
 
 ## Estructura del .html
 <body>
     <header></header> <!-- Lo llena el main.js -->
  <main class="container">
-    <!-- Con dos div se estableceel sistema de una columna angosta a la izquierda y otra más ancha a la derecha -->
+    <!-- Con dos div se establece el sistema de una columna angosta a la izquierda y otra más ancha a la derecha -->
      
     <div class="col-3 col-m-5 col-s-6">
     <h2>Últimas novedades</h2>
@@ -43,3 +50,15 @@
          <button>Comprar</button>
       </article>
 4. La información para cada tarjeta la toma de un archivo json llamado apiMascotienda.js
+
+## Estructura de apiMascotienda.js
+1. Tiene un array (llamado productos) que contiene objetos JSON con la siguiente estructura
+		{
+		"nombre" : "Transportadora Hipster",
+		"descripcion" : "Mantenga seguro a su perro cuando viaje",
+		"foto" : "img/TransportadoraHipster.png",
+		"precio" : 1200,
+		"tags" : ["perro","accesorios","novedad"]
+	},
+	
+	Observar que el nombre de la imagen debe iniciarse con el nombre de la carpeta img/.... y todas las imagenes deben ubicarse en dicha carpeta
