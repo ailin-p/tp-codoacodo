@@ -1,0 +1,23 @@
+	var productos = [
+		{
+		"nombre" : "Transportadora Hipster",
+		"descripcion" : "Mantenga seguro a su perro cuando viaje",
+		"foto" : "img/TransportadoraHipster.png",
+		"precio" : 100,
+		"tags" : ["perro","accesorios","novedad"]
+	},
+		{
+		"nombre" : "Jaula Acrílica Alvin",
+		"descripcion" : "Su hamster estará muy cómodo",
+		"foto" : "img/JaulaAcrilicaAlvin.png",
+		"precio" : 100,
+		"tags" : ["otros animales","accesorios","novedad"]
+	},
+		{
+		"nombre" : "Comedero Circular",
+		"descripcion" : "Para mascotas grandes y pequeñas",
+		"foto" : "img/ComederoCircular.jpg",
+		"precio" : 100,
+		"tags" : ["perro","gato","accesorios","novedad"]
+	},
+	]
