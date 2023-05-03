@@ -4,8 +4,11 @@
 
 1. Cada uno trabaja sobre una rama
 2. Cada imagen debe:
+	
 	a. guardarse en la carpeta img/
+	
 	b. El tamaño de la imagen debe ser de 300 x 300 px
+	
 	c. Cada imagen lleva por nombre el mismo que el del producto (sin espacios)
 3. Las categorías de animales son: gato, perro, otroAnimal (estos nombres se usan para los tags de cada producto)
 4. Las categorías de productos son: alimento, medicamento, accesorio (estos nombres se usan para los tags de cada producto)
@@ -44,13 +47,13 @@
 2. Escribe las tarjetas rellenando cada sección de acuerdo a su class
 3. La estructura de cada tarjeta es la siguiente
 		
-	//<article class="producto"> <!-- ó <article class="novedad"> -->
-		//<img src="${prod.foto}" alt="${prod.nombre}">
-      //<h3>${prod.nombre}</h3>
-      //<p>${prod.descripcion}</p>
-      //<h4>Precio: ${prod.precio}</h4>
-      //<button>Comprar</button>
-   //</article>
+		//<article class="producto"> <!-- ó <article class="novedad"> -->
+			//<img src="${prod.foto}" alt="${prod.nombre}">
+ 	    	//<h3>${prod.nombre}</h3>
+  	    	//<p>${prod.descripcion}</p>
+  	    	//<h4>Precio: ${prod.precio}</h4>
+      	//<button>Comprar</button>
+  	 	//</article>
       
 4. La información para cada tarjeta la toma de un archivo json llamado apiMascotienda.js
 
