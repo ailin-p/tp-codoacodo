@@ -4,12 +4,9 @@
 
 1. Cada uno trabaja sobre una rama
 2. Cada imagen debe:
-		
-		a. guardarse en la carpeta img/
-		
-		b. El tamaño de la imagen debe ser de 300 x 300 px
-		
-		c. Cada imagen lleva por nombre el mismo que el del producto (sin espacios)
+	a. guardarse en la carpeta img/
+	b. El tamaño de la imagen debe ser de 300 x 300 px
+	c. Cada imagen lleva por nombre el mismo que el del producto (sin espacios)
 3. Las categorías de animales son: gato, perro, otroAnimal (estos nombres se usan para los tags de cada producto)
 4. Las categorías de productos son: alimento, medicamento, accesorio (estos nombres se usan para los tags de cada producto)
 5. Se usa un tag novedad, para cada producto que se desea que aparezca en dicha categoría.
@@ -38,8 +35,9 @@
 ## Estructura del .css
 1. Se define un container grid.
 2. Para los div usa el frameworck de las 12 columnas.
-3. la "clase productos" es un contenedor de items de la "clase producto" (con formato de tarjeta)
-4. la "clase novedades" es un contenedor de items de la "clase novedad" (con formato de tarjeta)
+3. La "clase productos" es un contenedor de items de la "clase producto" (con formato de tarjeta)
+4. La "clase novedades" es un contenedor de items de la "clase novedad" (con formato de tarjeta)
+5. Tanto los productos como las novedades soncontainers de flexbox (display: flex)
 
 ## Estructura del main.js
 1. Escribe el header y el footer
