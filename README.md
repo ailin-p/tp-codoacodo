@@ -4,8 +4,11 @@
 
 1. Cada uno trabaja sobre una rama
 2. Cada imagen debe:
+		
 		a. guardarse en la carpeta img/
+		
 		b. El tamaño de la imagen debe ser de 300 x 300 px
+		
 		c. Cada imagen lleva por nombre el mismo que el del producto (sin espacios)
 3. Las categorías de animales son: gato, perro, otroAnimal (estos nombres se usan para los tags de cada producto)
 4. Las categorías de productos son: alimento, medicamento, accesorio (estos nombres se usan para los tags de cada producto)
@@ -34,31 +37,31 @@
 
 ## Estructura del .css
 1. Se define un container grid.
-2. Para los <div> usa el frameworck de las 12 columnas.
+2. Para los div usa el frameworck de las 12 columnas.
 3. la "clase productos" es un contenedor de items de la "clase producto" (con formato de tarjeta)
 4. la "clase novedades" es un contenedor de items de la "clase novedad" (con formato de tarjeta)
 
 ## Estructura del main.js
-1. Escribe el <header> y el <footer>
+1. Escribe el header y el footer
 2. Escribe las tarjetas rellenando cada sección de acuerdo a su class
-3. La estructura de cada tarjeta es la siguiente
-		<article class="producto"> <!-- ó <article class="novedad"> -->
+3. La estructura de cada tarjeta es la siguiente		
+		`<article class="producto"> <!-- ó <article class="novedad"> -->
 			<img src="${prod.foto}" alt="${prod.nombre}">
          <h3>${prod.nombre}</h3>
          <p>${prod.descripcion}</p>
          <h4>Precio: ${prod.precio}</h4>
          <button>Comprar</button>
-      </article>
+      </article>`
 4. La información para cada tarjeta la toma de un archivo json llamado apiMascotienda.js
 
 ## Estructura de apiMascotienda.js
 1. Tiene un array (llamado productos) que contiene objetos JSON con la siguiente estructura
-		{
+		`{
 		"nombre" : "Transportadora Hipster",
 		"descripcion" : "Mantenga seguro a su perro cuando viaje",
 		"foto" : "img/TransportadoraHipster.png",
 		"precio" : 1200,
 		"tags" : ["perro","accesorios","novedad"]
-	},
+	},`
 	
 	Observar que el nombre de la imagen debe iniciarse con el nombre de la carpeta img/.... y todas las imagenes deben ubicarse en dicha carpeta
