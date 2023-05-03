@@ -44,14 +44,16 @@
 ## Estructura del main.js
 1. Escribe el header y el footer
 2. Escribe las tarjetas rellenando cada sección de acuerdo a su class
-3. La estructura de cada tarjeta es la siguiente		
-		`<article class="producto"> <!-- ó <article class="novedad"> -->
+3. La estructura de cada tarjeta es la siguiente
+<body>		
+		<article class="producto"> <!-- ó <article class="novedad"> -->
 			<img src="${prod.foto}" alt="${prod.nombre}">
          <h3>${prod.nombre}</h3>
          <p>${prod.descripcion}</p>
          <h4>Precio: ${prod.precio}</h4>
          <button>Comprar</button>
-      </article>`
+      </article>
+</body>
 4. La información para cada tarjeta la toma de un archivo json llamado apiMascotienda.js
 
 ## Estructura de apiMascotienda.js
