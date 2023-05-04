@@ -65,7 +65,7 @@
 		"descripcion" : "Mantenga seguro a su perro cuando viaje",
 		"foto" : "img/TransportadoraHipster.png",
 		"precio" : 1200,
-		"tags" : ["perro","accesorios","novedad"]
+		"tags" : ["perro","accesorio","novedad"]
 	},`
 	
 	Observar que el nombre de la imagen debe iniciarse con el nombre de la carpeta img/.... y todas las imagenes deben ubicarse en dicha carpeta

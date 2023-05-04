@@ -69,6 +69,20 @@
 		"precio" : 5700,
 		"tags" : ["perro","alimento","regular"]
 	},
+						{
+		"nombre" : "Protemix Perro Adulto 21 Kg.",
+		"descripcion" : "Un perro bien alimentado es un perro feliz",
+		"foto" : "img/ProtemixPerroAdulto21Kg.png",
+		"precio" : 8000,
+		"tags" : ["perro","alimento","regular"]
+	},
+							{
+		"nombre" : "Dog Selection Premium Adulto 21 Kg.",
+		"descripcion" : "Un perro bien alimentado es un perro feliz",
+		"foto" : "img/DogSelectionPremiumAdulto21Kg.png",
+		"precio" : 8700,
+		"tags" : ["perro","alimento","regular"]
+	},
 	]
 	
 	
