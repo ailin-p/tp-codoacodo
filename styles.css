@@ -4,11 +4,23 @@
     margin: 0;
     padding: 0;
   }
-/* Colores de la paleta 07. Esto es más bien una guía, no estoy usando las clases. */
-.color1 {color: #000000;}
-.color2 {color: #062f4f;}
-.color3 {color: #813772;}
-.color4 {color: #b82601;}
+  /* Aquí se define la paleta de colores*/
+  /* Colores de la paleta 13. */
+:root {
+  	--color-1: #e24e42; /*PAPAYA*/
+  	--color-2: #e9b000; /*MUSTARD*/
+   --color-3: #eb6e80; /*BLUSH*/
+   --color-4: #008f95; /*AQUA*/
+}
+/* Colores de la paleta 07. */
+/*
+:root {
+  	--color-1: #000000; BLACK
+  	--color-2: #062f4f; INK
+   --color-3: #813772; POSY
+   --color-4: #b82601; EMBERS
+}
+*/
 
 /* Grid Columns */
 
@@ -29,6 +41,7 @@
 	float: left;
 	padding: 10px;
 }
+
 @media only screen and (max-width: 1300px) {	
 .col-m-1 {width: 8.33%;}
 .col-m-2 {width: 16.66%;}
@@ -70,14 +83,13 @@ body {
     font-size: 20px;
     line-height: 1.5;
     color: #000000;
-    background-color: #fff;
     text-align: center;
   }
   
 h1 {
     font-family: 'Bebas Neue', cursive;
     display: inline-block;
-    color: #f7a81c;
+    color: var(--color-2);
     margin: 0;
     font-size: 80px;
     letter-spacing: 2px;
@@ -87,25 +99,22 @@ h1 {
 h2 {
     margin: 20px;
     text-align: center;
-    /*display: flex;
-    justify-content: center;
-    align-items: center;*/
-  }
-span {
-  display: inline-block;
-
   }
   
   /* Header */
 header {
     padding: 20px;
-    background-color: #062f4f;
+    background-color: var(--color-1);
   }
   
+header img {
+  width: 80px;
+}
 
 nav {
   	background-color: black;
   	color: white;
+
   }
     
 nav ul {
@@ -179,8 +188,8 @@ main {
   
 .producto {
 	width: 300px;
-	border: 2px solid #813772;
-	box-shadow: 2px 2px 6px 0px  #813772;
+	border: 2px solid var(--color-3);
+	box-shadow: 2px 2px 6px 0px  var(--color-3);
 	border-radius: 10px;
 }
 
@@ -190,7 +199,7 @@ main {
 
 .producto button {
  	color: white;
- 	background-color: #813772;
+ 	background-color: var(--color-3);
  	padding: 10px 20px;
  	border: none;
  	border-radius: 3px;
@@ -206,8 +215,8 @@ main {
   
 .novedad  {
 	width: 300px;
-	border: 2px solid #b82601;
-	box-shadow: 2px 2px 6px 0px  #b82601;
+	border: 2px solid var(--color-4);
+	box-shadow: 2px 2px 6px 0px  var(--color-4);
 	border-radius: 10px;
 }
 
@@ -217,7 +226,7 @@ main {
 
 .novedad button {
  	color: white;
- 	background-color: #b82601;
+ 	background-color: var(--color-4);
  	padding: 10px 20px;
  	border: none;
  	border-radius: 3px;
@@ -280,7 +289,7 @@ footer {
 	display: inline-block;
 	width: 100%;
     color: #fff;
-    background-color: #062f4f;
+    background-color: var(--color-2);
     text-align: center;
     padding: 20px;
   }
