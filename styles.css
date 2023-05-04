@@ -178,7 +178,7 @@ main {
 	grid-gap: 20px;	
 }
 
-.productos {
+.productos, .alimentos, .accesorios, .saludes {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -186,18 +186,18 @@ main {
 	align-items: stretch;
   }
   
-.producto {
+.producto, .alimento, .accesorio, .salud {
 	width: 300px;
 	border: 2px solid var(--color-3);
 	box-shadow: 2px 2px 6px 0px  var(--color-3);
 	border-radius: 10px;
 }
 
-.producto img {
+.producto img, .alimento img, .accesorio img, .salud img {
   max-width: 100%;
 }
 
-.producto button {
+.producto button, .alimento button, .accesorio button, .salud button  {
  	color: white;
  	background-color: var(--color-3);
  	padding: 10px 20px;
@@ -205,7 +205,7 @@ main {
  	border-radius: 3px;
   }
   
-.novedades {
+.novedades, .destacados {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -213,18 +213,18 @@ main {
 	align-items: stretch;
 }
   
-.novedad  {
+.novedad, .destacado  {
 	width: 300px;
 	border: 2px solid var(--color-4);
 	box-shadow: 2px 2px 6px 0px  var(--color-4);
 	border-radius: 10px;
 }
 
-.novedad img {
+.novedad img, .destacado img {
   max-width: 100%;
 }
 
-.novedad button {
+.novedad button, .destacado button {
  	color: white;
  	background-color: var(--color-4);
  	padding: 10px 20px;
