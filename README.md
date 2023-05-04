@@ -12,7 +12,7 @@
 	c. Cada imagen lleva por nombre el mismo que el del producto (sin espacios)
 	
 3. Las categorías de animales son: gato, perro, otroAnimal (estos nombres se usan para los tags de cada producto)
-4. Las categorías de productos son: alimento, medicamento, accesorio (estos nombres se usan para los tags de cada producto)
+4. Las categorías de productos son: alimento, salud, accesorio (estos nombres se usan para los tags de cada producto)
 5. Se usa un tag novedad, destacado, regular, para cada producto que se desea que aparezca en dicha categoría.
 
 ## Estructura del .html
