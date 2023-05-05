@@ -68,15 +68,15 @@
 		"tags" : ["perro","accesorio","novedad"]
 	},`
 	
-	Observar que el nombre de la imagen debe iniciarse con el nombre de la carpeta img/.... y todas las imagenes deben ubicarse en dicha carpeta
+Observar que el nombre de la imagen debe iniciarse con el nombre de la carpeta img/.... y todas las imagenes deben ubicarse en dicha carpeta
 	
-	## Productos en la api actualmente
+## Productos en la api actualmente
 	
-					Perros			Gatos				Otros Animales
+		Perros		Gatos		Otros Animales
 --------------+--------------+--------------+--------------+
-	Alimentos			4					4					4
+Alimentos		4		4		4
 --------------+--------------+--------------+--------------+
-	Accesorios			4					4					4
+Accesorios		4		4		4
 --------------+--------------+--------------+--------------+
-	Salud					4					4					4
+Salud			4		4		4
 --------------+--------------+--------------+--------------+
