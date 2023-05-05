@@ -15,23 +15,23 @@
 ## Estructura del .html
 ```
 <body>
-    <header></header> <!-- Lo llena el main.js -->
- <main class="container">
+   <header></header> <!-- Lo llena el encabezadoYPie.js -->
+ 	<main class="container">
     <!-- Con dos div se establece el sistema de una columna angosta a la izquierda y otra más ancha a la derecha -->
      
-    <div class="col-3 col-m-5 col-s-6">
-    <h2>Últimas novedades</h2>
-      <section class="novedades"> <!-- A cada sección las llena el main.js -->
-      </section>
-      </div>
+		<div class="col-3 col-m-5 col-s-6">
+    		<h2>Últimas novedades</h2>
+      	<section class="novedades"> <!-- A cada sección las llena el main.js -->
+      	</section>
+		</div>
       
-     <div class="col-9 col-m-7 col-s-6">  
-     <h2>Productos destacados</h2>
-      <section class="productos">
-       </section>
-     </div>     
- </main>
-    <footer></footer> <!-- Lo llena el main.js -->
+		<div class="col-9 col-m-7 col-s-6">  
+			<h2>Productos destacados</h2>
+			<section class="productos">
+			</section>
+		</div>     
+	</main>
+	<footer></footer> <!-- Lo llena el encabezadoYPie.js -->
 </body>
 ```
 ## Estructura del .css
@@ -46,20 +46,20 @@
 2. Escribe las tarjetas rellenando cada sección de acuerdo a su class
 3. La estructura de cada tarjeta es la siguiente
 ```
-		<article class="producto"> <!-- ó <article class="novedad"> -->
-			<img src="${prod.foto}" alt="${prod.nombre}">
- 	    	<h3>${prod.nombre}</h3>
-  	    	<p>${prod.descripcion}</p>
-  	    	<h4>Precio: ${prod.precio}</h4>
-      	<button>Comprar</button>
-  	 	</article>
+	<article class="producto"> <!-- ó <article class="novedad"> -->
+		<img src="${prod.foto}" alt="${prod.nombre}">
+ 	   <h3>${prod.nombre}</h3>
+  	   <p>${prod.descripcion}</p>
+  	   <h4>Precio: ${prod.precio}</h4>
+      <button>Comprar</button>
+  	 </article>
  ```     
 4. La información para cada tarjeta la toma de un archivo json llamado apiMascotienda.js
 
 ## Estructura de apiMascotienda.js
 1. Tiene un array (llamado productos) que contiene objetos JSON con la siguiente estructura
 ```
-		`{
+	`{
 		"nombre" : "Transportadora Hipster",
 		"descripcion" : "Mantenga seguro a su perro cuando viaje",
 		"foto" : "img/TransportadoraHipster.png",
@@ -74,8 +74,5 @@ Observar que el nombre de la imagen debe iniciarse con el nombre de la carpeta i
 |					| Perros			|	Gatos			| Otros Animales|
 |------------- | ------------ | ------------ | ------------- |
 |Alimentos		|			4		|			4		|			4		 |
-|------------- | ------------ | ------------ | ------------- |
 |Accesorios		|			4		|			4		|			4		 |
-|------------- | ------------ | ------------ | ------------- |
 |Salud			|			4		|			4		|			4		 |
-|------------- | ------------ | ------------ | ------------- |
