@@ -4,18 +4,16 @@
 
 1. Cada uno trabaja sobre una rama
 2. Cada imagen debe:
-	
-	a. guardarse en la carpeta img/
-	
-	b. El tamaño de la imagen debe ser cuadrada (preferiblemente de 300 x 300 px)
-	
-	c. Cada imagen lleva por nombre el mismo que el del producto (sin espacios)
+	- guardarse en la carpeta img/
+	- El tamaño de la imagen debe ser cuadrada (preferiblemente de 300 x 300 px)
+	- Cada imagen lleva por nombre el mismo que el del producto (sin espacios)
 	
 3. Las categorías de animales son: gato, perro, otroAnimal (estos nombres se usan para los tags de cada producto)
 4. Las categorías de productos son: alimento, salud, accesorio (estos nombres se usan para los tags de cada producto)
 5. Se usa un tag novedad, destacado, regular, para cada producto que se desea que aparezca en dicha categoría.
 
 ## Estructura del .html
+```
 <body>
     <header></header> <!-- Lo llena el main.js -->
  <main class="container">
@@ -35,7 +33,7 @@
  </main>
     <footer></footer> <!-- Lo llena el main.js -->
 </body>
-
+```
 ## Estructura del .css
 1. Se define un container grid.
 2. Para los div usa el frameworck de las 12 columnas. Es responsive con 3 puntos de corte (Muy grande > 1300px > Grande > 900 > Tablet > 650 > Celular).
@@ -47,19 +45,20 @@
 1. Escribe el header y el footer
 2. Escribe las tarjetas rellenando cada sección de acuerdo a su class
 3. La estructura de cada tarjeta es la siguiente
-		
-		//<article class="producto"> <!-- ó <article class="novedad"> -->
-			//<img src="${prod.foto}" alt="${prod.nombre}">
- 	    	//<h3>${prod.nombre}</h3>
-  	    	//<p>${prod.descripcion}</p>
-  	    	//<h4>Precio: ${prod.precio}</h4>
-      	//<button>Comprar</button>
-  	 	//</article>
-      
+```
+		<article class="producto"> <!-- ó <article class="novedad"> -->
+			<img src="${prod.foto}" alt="${prod.nombre}">
+ 	    	<h3>${prod.nombre}</h3>
+  	    	<p>${prod.descripcion}</p>
+  	    	<h4>Precio: ${prod.precio}</h4>
+      	<button>Comprar</button>
+  	 	</article>
+ ```     
 4. La información para cada tarjeta la toma de un archivo json llamado apiMascotienda.js
 
 ## Estructura de apiMascotienda.js
 1. Tiene un array (llamado productos) que contiene objetos JSON con la siguiente estructura
+```
 		`{
 		"nombre" : "Transportadora Hipster",
 		"descripcion" : "Mantenga seguro a su perro cuando viaje",
@@ -67,16 +66,16 @@
 		"precio" : 1200,
 		"tags" : ["perro","accesorio","novedad"]
 	},`
-	
+```
 Observar que el nombre de la imagen debe iniciarse con el nombre de la carpeta img/.... y todas las imagenes deben ubicarse en dicha carpeta
 	
 ## Productos en la api actualmente
 	
-					Perros				Gatos			Otros Animales
---------------+--------------+--------------+--------------+
-Alimentos				4					4					4
---------------+--------------+--------------+--------------+
-Accesorios				4					4					4
---------------+--------------+--------------+--------------+
-Salud						4					4					4
---------------+--------------+--------------+--------------+
+|					| Perros			|	Gatos			| Otros Animales|
+|------------- | ------------ | ------------ | ------------- |
+|Alimentos		|			4		|			4		|			4		 |
+|------------- | ------------ | ------------ | ------------- |
+|Accesorios		|			4		|			4		|			4		 |
+|------------- | ------------ | ------------ | ------------- |
+|Salud			|			4		|			4		|			4		 |
+|------------- | ------------ | ------------ | ------------- |
