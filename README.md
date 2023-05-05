@@ -7,7 +7,7 @@
 	
 	a. guardarse en la carpeta img/
 	
-	b. El tamaño de la imagen debe ser de 300 x 300 px
+	b. El tamaño de la imagen debe ser cuadrada (preferiblemente de 300 x 300 px)
 	
 	c. Cada imagen lleva por nombre el mismo que el del producto (sin espacios)
 	
@@ -38,10 +38,10 @@
 
 ## Estructura del .css
 1. Se define un container grid.
-2. Para los div usa el frameworck de las 12 columnas.
+2. Para los div usa el frameworck de las 12 columnas. Es responsive con 3 puntos de corte (Muy grande > 1300px > Grande > 900 > Tablet > 650 > Celular).
 3. La "clase productos" es un contenedor de items de la "clase producto" (con formato de tarjeta)
 4. La "clase novedades" es un contenedor de items de la "clase novedad" (con formato de tarjeta)
-5. Tanto los productos como las novedades soncontainers de flexbox (display: flex)
+5. Tanto los productos como las novedades son containers de flexbox (display: flex)
 
 ## Estructura del main.js
 1. Escribe el header y el footer
@@ -69,3 +69,14 @@
 	},`
 	
 	Observar que el nombre de la imagen debe iniciarse con el nombre de la carpeta img/.... y todas las imagenes deben ubicarse en dicha carpeta
+	
+	## Productos en la api actualmente
+	
+					Perros			Gatos				Otros Animales
+--------------+--------------+--------------+--------------+
+	Alimentos			4					4					4
+--------------+--------------+--------------+--------------+
+	Accesorios			4					4					4
+--------------+--------------+--------------+--------------+
+	Salud					4					4					4
+--------------+--------------+--------------+--------------+
