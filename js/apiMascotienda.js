@@ -1,27 +1,28 @@
 	let productos = [
 /*perro - alimento*/
 		{
+		"id" : 1,
 		"nombre" : "Estampa Plus Perro Adulto 20 Kg.",
 		"descripcion" : "Un perro bien alimentado es un perro feliz",
 		"foto" : "img/EstampaPlusPerroAdulto20Kg.png",
 		"precio" : 5700,
 		"tags" : ["perro","alimento","regular"]
 	},
-					{
+		{
 		"nombre" : "Protemix Perro Adulto 21 Kg.",
 		"descripcion" : "Un perro bien alimentado es un perro feliz",
 		"foto" : "img/ProtemixPerroAdulto21Kg.png",
 		"precio" : 8000,
 		"tags" : ["perro","alimento","regular"]
 	},
-					{
+		{
 		"nombre" : "Dog Selection Premium Adulto 21 Kg.",
 		"descripcion" : "Un perro bien alimentado es un perro feliz",
 		"foto" : "img/DogSelectionPremiumAdulto21Kg.png",
 		"precio" : 8700,
 		"tags" : ["perro","alimento","destacado"]
 	},
-					{
+		{
 		"nombre" : "Golosinas Dentastix Pedigree 5 a 10 kg 7 U.",
 		"descripcion" : "Un perro bien alimentado es un perro feliz",
 		"foto" : "img/GolosinasDentastixPedigree5a10kg7U.png",
@@ -247,7 +248,7 @@
 		{
 		"nombre" : "Anticloro 1000ml.",
 		"descripcion" : "Pecera muy vistosa con volumen para sus peces.",
-		"foto" : "img/Anticloro 1000ml.png",
+		"foto" : "img/Anticloro1000ml.png",
 		"precio" : 1150,
 		"tags" : ["otrosAnimales","salud","regular"]
 	},
@@ -263,7 +264,7 @@
 		"descripcion" : "Ideal para los pequeños animales. Cobayas, Conejos, Exóticos, Hurones",
 		"foto" : "img/ShampooenSecoparaExoticos147ml.png",
 		"precio" : 900,
-		"tags" : ["otrosAnimales","salud","regular"]
+		"tags" : ["otrosAnimales","salud","destacado"]
 	},
 	]
 
