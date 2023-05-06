@@ -94,7 +94,7 @@
 		"descripcion" : "Un gato bien alimentado es un gato feliz",
 		"foto" : "img/ProtemixGatoAdulto.png",
 		"precio" : 4900,
-		"tags" : ["gato","alimento","destacado"]
+		"tags" : ["gato","alimento","regular"]
 	},
 		{
 		"nombre" : "Cat Selection 10Kg",
@@ -108,7 +108,7 @@
 		"descripcion" : "Un gato bien alimentado es un gato feliz",
 		"foto" : "img/EstampaPlusGato15Kg.png",
 		"precio" : 7100,
-		"tags" : ["gato","alimento","regular"]
+		"tags" : ["gato","alimento","destacado"]
 	},
 					{
 		"nombre" : "Vagoneta Gato Adulto 20kg",
@@ -123,14 +123,14 @@
 		"descripcion" : "Tenga un gato sano",
 		"foto" : "img/PiedrassanitariasTheBest2kg.png",
 		"precio" : 260,
-		"tags" : ["gato","accesorio","destacado"]
+		"tags" : ["gato","accesorio","regular"]
 	},
 		{
 		"nombre" : "Juguete Interactivo y Dispenser Chico",
 		"descripcion" : "Diversión sin límites para usted y su gato",
 		"foto" : "img/JugueteInteractivoyDispenserChico.png",
 		"precio" : 1390,
-		"tags" : ["gato","accesorio","regular"]
+		"tags" : ["gato","accesorio","destacado"]
 	},
 		{
 		"nombre" : "Kit Sanitario Mediano",

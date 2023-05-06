@@ -15,23 +15,25 @@
 ## Estructura del .html
 ```
 <body>
-   <header></header> <!-- Lo llena el encabezadoYPie.js -->
- 	<main class="container">
-    <!-- Con dos div se establece el sistema de una columna angosta a la izquierda y otra más ancha a la derecha -->
-     
+<!-- Lo llena el encabezadoYPie.js -->
+	<header></header> 
+	<main class="container">
+<!-- Con dos div se establece el sistema de una columna angosta a la izquierda y otra más ancha a la derecha -->
 		<div class="col-3 col-m-5 col-s-6">
-    		<h2>Últimas novedades</h2>
-      	<section class="novedades"> <!-- A cada sección las llena el main.js -->
-      	</section>
+			<h2>Últimas novedades</h2>
+<!-- A cada sección las llena el main.js -->
+			<section class="novedades"> 
+			</section>
 		</div>
-      
+		
 		<div class="col-9 col-m-7 col-s-6">  
 			<h2>Productos destacados</h2>
 			<section class="productos">
 			</section>
 		</div>     
 	</main>
-	<footer></footer> <!-- Lo llena el encabezadoYPie.js -->
+<!-- Lo llena el encabezadoYPie.js -->
+	<footer></footer> 
 </body>
 ```
 ## Estructura del .css
