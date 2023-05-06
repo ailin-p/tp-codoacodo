@@ -43,9 +43,13 @@
 4. La "clase novedades" es un contenedor de items de la "clase novedad" (con formato de tarjeta)
 5. Tanto los productos como las novedades son containers de flexbox (display: flex)
 
-## Estructura del main.js
+## Estructura de encabezadoYPie.js
 1. Escribe el header y el footer
-2. Escribe las tarjetas rellenando cada sección de acuerdo a su class
+2. Primero arma un strig de comillas francesas
+3. Luego escribe el string en el documento html.
+
+## Estructura del main.js
+1. Escribe las tarjetas rellenando cada sección de acuerdo a su class
 3. La estructura de cada tarjeta es la siguiente
 ```
 	<article class="producto"> <!-- ó <article class="novedad"> -->
@@ -55,13 +59,14 @@
   	   <h4>Precio: ${prod.precio}</h4>
       <button>Comprar</button>
   	 </article>
- ```     
+ ```      
 4. La información para cada tarjeta la toma de un archivo json llamado apiMascotienda.js
 
 ## Estructura de apiMascotienda.js
 1. Tiene un array (llamado productos) que contiene objetos JSON con la siguiente estructura
 ```
 	`{
+		"id" : 1,
 		"nombre" : "Transportadora Hipster",
 		"descripcion" : "Mantenga seguro a su perro cuando viaje",
 		"foto" : "img/TransportadoraHipster.png",

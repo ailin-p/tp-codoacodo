@@ -199,7 +199,7 @@ main {
 	grid-gap: 20px;	
 }
 
-.productos, .alimentos, .accesorios, .saludes {
+.productos, .alimentos, .accesorios, .saludes, .perros, .gatos, .otrosAnimales {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -207,7 +207,7 @@ main {
 	align-items: stretch;
   }
   
-.producto, .alimento, .accesorio, .salud {
+.producto, .alimento, .accesorio, .salud, .perro, .gato, .otroAnimal {
 	width: 300px;
 	/*border: 2px solid var(--color-3);*/
 	box-shadow: 2px 2px 6px 0px  var(--color-3);
@@ -215,11 +215,11 @@ main {
 	border-radius: 10px;
 }
 
-.producto img, .alimento img, .accesorio img, .salud img {
+.producto img, .alimento img, .accesorio img, .salud img, .perro img, .gato img, .otroAnimal img {
   max-width: 100%;
 }
 
-.producto button, .alimento button, .accesorio button, .salud button  {
+.producto button, .alimento button, .accesorio button, .salud button, .perro button, .gato button, .otroAnimal button  {
  	color: white;
  	background-color: var(--color-3);
  	padding: 10px 20px;
