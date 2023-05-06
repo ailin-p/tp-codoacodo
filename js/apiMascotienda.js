@@ -1,4 +1,5 @@
 	let productos = [
+
 /*perro - alimento*/
 		{
 		"id" : 1,
@@ -30,90 +31,7 @@
 		"tags" : ["perro","alimento","regular"]
 	},
 /*perro - accesorio*/
-		{
-		"nombre" : "Transportadora Hipster",
-		"descripcion" : "Mantenga seguro a su perro cuando viaje",
-		"foto" : "img/TransportadoraHipster.png",
-		"precio" : 4540,
-		"tags" : ["perro","accesorio","destacado"]
-	},
-		{
-		"nombre" : "Comedero Circular",
-		"descripcion" : "Para mascotas grandes y pequeñas",
-		"foto" : "img/ComederoCircular.jpg",
-		"precio" : 1200,
-		"tags" : ["perro","accesorio","regular"]
-	},
-		{
-		"nombre" : "Hueso Flotante Can Cat",
-		"descripcion" : "Para la diversion  de su perro",
-		"foto" : "img/HuesoFlotanteCanCat.png",
-		"precio" : 4260,
-		"tags" : ["perro","accesorio","regular"]
-	},
-		{
-		"nombre" : "Casa Nova Nº 2- Plast Pet",
-		"descripcion" : "Para la diversion  de su perro",
-		"foto" : "img/CasaNovaNº2-PlastPet.png",
-		"precio" : 20000,
-		"tags" : ["perro","accesorio","novedad"]
-	},
-		
-/*perro - salud*/
-		{
-		"nombre" : "Drontal Antiparasitario Interno para Perros de 35 Kg",
-		"descripcion" : "Antiparasitario interno de amplio espectro, para perros adultos de razas grandes.",
-		"foto" : "img/DrontalAntiparasitarioInternoparaPerrosde35Kg.png",
-		"precio" : 1600,
-		"tags" : ["perro","salud","regular"]
-	},
-		{
-		"nombre" : "Daily Multi para Perros 105gr – PetNaturals",
-		"descripcion" : "Deliciosos masticables, más de 25 nutrientes, las vitaminas B y minerales esenciales",
-		"foto" : "img/DailyMultiparaPerros105gr–PetNaturals.png",
-		"precio" : 900,
-		"tags" : ["perro","salud","regular"]
-	},
-		{
-		"nombre" : "Shampoo Furrish Avena 300ml",
-		"descripcion" : "Shampoo de avena de limpieza profunda, hipoalergénica para los cachorros",
-		"foto" : "img/ShampooFurrishAvena300ml.jpg",
-		"precio" : 1100,
-		"tags" : ["perro","salud","regular"]
-	},
-		{
-		"nombre" : "BusyButter Calming Peanut Butter – PetNaturals",
-		"descripcion" : "Snack de mantequilla de maní que puede ayudar a su perro a relajarse",
-		"foto" : "img/BusyButterCalmingPeanutButter–PetNaturals.png",
-		"precio" : 1100,
-		"tags" : ["perro","salud","regular"]
-	},
- 
-/*gato - alimento*/
-		{
-		"nombre" : "Protemix Gato Adulto",
-		"descripcion" : "Un gato bien alimentado es un gato feliz",
-		"foto" : "img/ProtemixGatoAdulto.png",
-		"precio" : 4900,
-		"tags" : ["gato","alimento","regular"]
-	},
-		{
-		"nombre" : "Cat Selection 10Kg",
-		"descripcion" : "Un gato bien alimentado es un gato feliz",
-		"foto" : "img/CatSelection10Kg.png",
-		"precio" : 6750,
-		"tags" : ["gato","alimento","regular"]
-	},
-					{
-		"nombre" : "Estampa Plus Gato 15 Kg",
-		"descripcion" : "Un gato bien alimentado es un gato feliz",
-		"foto" : "img/EstampaPlusGato15Kg.png",
-		"precio" : 7100,
-		"tags" : ["gato","alimento","destacado"]
-	},
-					{
-		"nombre" : "Vagoneta Gato Adulto 20kg",
-		"descripcion" : "Un perro bien alimentado es un perro feliz",
+
 		"foto" : "img/VagonetaGatoAdulto20kg.png",
 		"precio" : 600,
 		"tags" : ["gato","alimento","regular"]
@@ -251,20 +169,11 @@
 		"foto" : "img/Anticloro1000ml.png",
 		"precio" : 1150,
 		"tags" : ["otrosAnimales","salud","regular"]
-	},
-		{
-		"nombre" : "Men for San Insecticida Acaricida Aves 250ml - KuantoKusta",
-		"descripcion" : "Tenga sus aves con plumajes sanos",
-		"foto" : "img/MenforSanInsecticidaAcaricidaAves250ml-KuantoKusta.jpeg",
-		"precio" : 700,
-		"tags" : ["otrosAnimales","salud","regular"]
-	},
-		{
-		"nombre" : "Shampoo en Seco para Exóticos 147ml",
-		"descripcion" : "Ideal para los pequeños animales. Cobayas, Conejos, Exóticos, Hurones",
-		"foto" : "img/ShampooenSecoparaExoticos147ml.png",
-		"precio" : 900,
-		"tags" : ["otrosAnimales","salud","destacado"]
+=======
+		"foto" : "img/EstampaPlusPerroAdulto20Kg.png",
+		"precio" : 5700,
+		"tags" : ["perro","alimento","regular"]
 	},
 	]
-
+	
+	
