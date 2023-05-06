@@ -23,7 +23,9 @@ let hdr = `<h1>Mascotienda</h1>
             </ul>
         </nav>`;
        
-let ftr = `<p>Mascotienda - Todos los derechos reservados</p>`;
+let ftr = `<p>Mascotienda. mascotienda@gmail.com - cel: 1212-3131</p>
+	<p>Webmaster: grupo incivil <b>"Las Huellas del Tigre"</b></p>
+	<p>Ningún derecho reservado</p>`;
         
 document.getElementsByTagName("header").item(0).innerHTML=hdr;
 document.getElementsByTagName("footer").item(0).innerHTML=ftr;
