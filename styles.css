@@ -9,9 +9,8 @@
 :root {
   	--color-1: #e24e42; /*PAPAYA*/
   	--color-2: #e9b000; /*MUSTARD*/
-  	--color-3: #008f95; /*AQUA*/
-   --color-4: #eb6e80; /*BLUSH*/
-
+   --color-3: #eb6e80; /*BLUSH*/
+   --color-4: #008f95; /*AQUA*/
 }
 /* Colores de la paleta 07. */
 /*
@@ -81,7 +80,7 @@
   
 body {
     font-family: 'Roboto', sans-serif;
-    font-size: 1em;
+    font-size: 20px;
     line-height: 1.5;
     color: #000000;
     text-align: center;
@@ -92,35 +91,15 @@ h1 {
     display: inline-block;
     color: var(--color-2);
     margin: 0;
-    font-size: 4em;
-    letter-spacing: 3px;
+    font-size: 80px;
+    letter-spacing: 2px;
     text-align: center;
   }
   
 h2 {
     margin: 20px;
-    text-align: left;
-    font-size: 1.3em;
-    font-weight: bolder;
-  }
-  
-h2.subtitulo {
-	 font-family: 'Expansiva','Good Time', 'Radio Space', monospace;
-    font-size: 2.5em;
     text-align: center;
-    font-weight: bolder;
   }
-  
-h3 {
-    margin: 20px;
-    text-align: center;
-    font-size: 1.2em;
-    font-weight: bolder;
-  }
-  
-img {
-  padding: 5px;
-}
   
   /* Header */
 header {
@@ -129,13 +108,13 @@ header {
   }
   
 header img {
-  	width: 100px;
-	padding: 0px;
+  width: 80px;
 }
 
 nav {
   	background-color: black;
   	color: white;
+
   }
     
 nav ul {
@@ -209,9 +188,8 @@ main {
   
 .producto, .alimento, .accesorio, .salud {
 	width: 300px;
-	/*border: 2px solid var(--color-3);*/
+	border: 2px solid var(--color-3);
 	box-shadow: 2px 2px 6px 0px  var(--color-3);
-	padding: 7px;
 	border-radius: 10px;
 }
 
@@ -232,14 +210,13 @@ main {
 	flex-direction: row;
 	flex-wrap: wrap;
 	grid-gap: 20px;
-	justify-content: center;
+	align-items: stretch;
 }
   
 .novedad, .destacado  {
 	width: 300px;
-	/*border: 2px solid var(--color-4);*/
+	border: 2px solid var(--color-4);
 	box-shadow: 2px 2px 6px 0px  var(--color-4);
-	padding: 7px;
 	border-radius: 10px;
 }
 
@@ -311,13 +288,13 @@ button[type="submit"]:hover {
 footer {
 	display: inline-block;
 	width: 100%;
-   background-color: var(--color-1);
-   text-align: center;
-   padding: 20px;
+    color: #fff;
+    background-color: var(--color-2);
+    text-align: center;
+    padding: 20px;
   }
   
 footer p {
-  	color: var(--color-2);
-  	font-weight: bold;
+  	color: #fff;
   	margin: 0;
   }

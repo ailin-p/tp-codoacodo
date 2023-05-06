@@ -9,7 +9,7 @@ for (let prod of prods) {
                 <button>Comprar</button>
                 </article>`);  
 }
-document.getElementsByClassName("productos")[0].innerHTML=tarjeta;
+document.getElementsByClassName("productos").item(0).innerHTML=tarjeta;
 
 
 prods = productos.filter(p => p.tags.some((x) => x == "novedad"))
@@ -23,5 +23,5 @@ for (let prod of prods) {
                 <button>Comprar</button>
                 </article>`);  
 }
-document.getElementsByClassName("novedades")[0].innerHTML=tarjeta;
+document.getElementsByClassName("novedades").item(0).innerHTML=tarjeta;
 

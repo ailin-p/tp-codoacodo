@@ -10,7 +10,7 @@ for (let prod of prods) {
                 <button>Comprar</button>
                 </article>`);  
 }
-document.getElementsByClassName("destacados")[0].innerHTML=tarjeta;
+document.getElementsByClassName("destacados").item(0).innerHTML=tarjeta;
 
 prods = perros.filter(p => p.tags.some((x) => x == "alimento"))
 tarjeta = ``;
@@ -23,7 +23,7 @@ for (let prod of prods) {
                 <button>Comprar</button>
                 </article>`);  
 }
-document.getElementsByClassName("alimentos")[0].innerHTML=tarjeta;
+document.getElementsByClassName("alimentos").item(0).innerHTML=tarjeta;
 
 prods = perros.filter(p => p.tags.some((x) => x == "accesorio"))
 tarjeta = ``;
@@ -36,7 +36,7 @@ for (let prod of prods) {
                 <button>Comprar</button>
                 </article>`);  
 }
-document.getElementsByClassName("accesorios")[0].innerHTML=tarjeta;
+document.getElementsByClassName("accesorios").item(0).innerHTML=tarjeta;
 
 prods = perros.filter(p => p.tags.some((x) => x == "salud"))
 tarjeta = ``;
@@ -49,5 +49,5 @@ for (let prod of prods) {
                 <button>Comprar</button>
                 </article>`);  
 }
-document.getElementsByClassName("saludes")[0].innerHTML=tarjeta;
+document.getElementsByClassName("saludes").item(0).innerHTML=tarjeta;
 
