@@ -9,8 +9,9 @@
 :root {
   	--color-1: #e24e42; /*PAPAYA*/
   	--color-2: #e9b000; /*MUSTARD*/
-   --color-3: #eb6e80; /*BLUSH*/
-   --color-4: #008f95; /*AQUA*/
+  	--color-3: #008f95; /*AQUA*/
+   --color-4: #eb6e80; /*BLUSH*/
+
 }
 /* Colores de la paleta 07. */
 /*
@@ -80,7 +81,7 @@
   
 body {
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 1em;
     line-height: 1.5;
     color: #000000;
     text-align: center;
@@ -91,15 +92,35 @@ h1 {
     display: inline-block;
     color: var(--color-2);
     margin: 0;
-    font-size: 80px;
-    letter-spacing: 2px;
+    font-size: 4em;
+    letter-spacing: 3px;
     text-align: center;
   }
   
 h2 {
     margin: 20px;
-    text-align: center;
+    text-align: left;
+    font-size: 1.3em;
+    font-weight: bolder;
   }
+  
+h2.subtitulo {
+	 font-family: 'Expansiva','Good Time', 'Radio Space', monospace;
+    font-size: 2.5em;
+    text-align: center;
+    font-weight: bolder;
+  }
+  
+h3 {
+    margin: 20px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bolder;
+  }
+  
+img {
+  padding: 5px;
+}
   
   /* Header */
 header {
@@ -108,13 +129,13 @@ header {
   }
   
 header img {
-  width: 80px;
+  	width: 100px;
+	padding: 0px;
 }
 
 nav {
   	background-color: black;
   	color: white;
-
   }
     
 nav ul {
@@ -178,7 +199,7 @@ main {
 	grid-gap: 20px;	
 }
 
-.productos, .alimentos, .accesorios, .saludes {
+.productos, .alimentos, .accesorios, .saludes, .perros, .gatos, .otrosAnimales {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -186,18 +207,19 @@ main {
 	align-items: stretch;
   }
   
-.producto, .alimento, .accesorio, .salud {
+.producto, .alimento, .accesorio, .salud, .perro, .gato, .otroAnimal {
 	width: 300px;
-	border: 2px solid var(--color-3);
+	/*border: 2px solid var(--color-3);*/
 	box-shadow: 2px 2px 6px 0px  var(--color-3);
+	padding: 7px;
 	border-radius: 10px;
 }
 
-.producto img, .alimento img, .accesorio img, .salud img {
+.producto img, .alimento img, .accesorio img, .salud img, .perro img, .gato img, .otroAnimal img {
   max-width: 100%;
 }
 
-.producto button, .alimento button, .accesorio button, .salud button  {
+.producto button, .alimento button, .accesorio button, .salud button, .perro button, .gato button, .otroAnimal button  {
  	color: white;
  	background-color: var(--color-3);
  	padding: 10px 20px;
@@ -210,13 +232,14 @@ main {
 	flex-direction: row;
 	flex-wrap: wrap;
 	grid-gap: 20px;
-	align-items: stretch;
+	justify-content: center;
 }
   
 .novedad, .destacado  {
 	width: 300px;
-	border: 2px solid var(--color-4);
+	/*border: 2px solid var(--color-4);*/
 	box-shadow: 2px 2px 6px 0px  var(--color-4);
+	padding: 7px;
 	border-radius: 10px;
 }
 
@@ -288,13 +311,13 @@ button[type="submit"]:hover {
 footer {
 	display: inline-block;
 	width: 100%;
-    color: #fff;
-    background-color: var(--color-2);
-    text-align: center;
-    padding: 20px;
+   background-color: var(--color-1);
+   text-align: center;
+   padding: 20px;
   }
   
 footer p {
-  	color: #fff;
+  	color: var(--color-2);
+  	font-weight: bold;
   	margin: 0;
   }

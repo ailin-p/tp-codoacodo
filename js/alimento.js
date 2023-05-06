@@ -1,5 +1,5 @@
-let perros = productos.filter(p => p.tags.some((x) => x == "perro"))
-prods = perros.filter(p => p.tags.some((x) => x == "destacado"))
+let alimentos = productos.filter(p => p.tags.some((x) => x == "alimento"))
+prods = alimentos.filter(p => p.tags.some((x) => x == "destacado"))
 let tarjeta = ``;
 for (let prod of prods) {
 	tarjeta = tarjeta.concat(`<article class="destacado">
@@ -12,10 +12,10 @@ for (let prod of prods) {
 }
 document.getElementsByClassName("destacados")[0].innerHTML=tarjeta;
 
-prods = perros.filter(p => p.tags.some((x) => x == "alimento"))
+prods = alimentos.filter(p => p.tags.some((x) => x == "gato"))
 tarjeta = ``;
 for (let prod of prods) {
-	tarjeta = tarjeta.concat(`<article class="alimento">
+	tarjeta = tarjeta.concat(`<article class="gato">
 					 <img src="${prod.foto}" alt="${prod.nombre}">
                 <h3>${prod.nombre}</h3>
                 <p>${prod.descripcion}</p>
@@ -23,12 +23,12 @@ for (let prod of prods) {
                 <button>Comprar</button>
                 </article>`);  
 }
-document.getElementsByClassName("alimentos")[0].innerHTML=tarjeta;
+document.getElementsByClassName("gatos")[0].innerHTML=tarjeta;
 
-prods = perros.filter(p => p.tags.some((x) => x == "accesorio"))
+prods = alimentos.filter(p => p.tags.some((x) => x == "perro"))
 tarjeta = ``;
 for (let prod of prods) {
-	tarjeta = tarjeta.concat(`<article class="accesorio">
+	tarjeta = tarjeta.concat(`<article class="perro">
 					 <img src="${prod.foto}" alt="${prod.nombre}">
                 <h3>${prod.nombre}</h3>
                 <p>${prod.descripcion}</p>
@@ -36,12 +36,12 @@ for (let prod of prods) {
                 <button>Comprar</button>
                 </article>`);  
 }
-document.getElementsByClassName("accesorios")[0].innerHTML=tarjeta;
+document.getElementsByClassName("perros")[0].innerHTML=tarjeta;
 
-prods = perros.filter(p => p.tags.some((x) => x == "salud"))
+prods = alimentos.filter(p => p.tags.some((x) => x == "otroAnimal"))
 tarjeta = ``;
 for (let prod of prods) {
-	tarjeta = tarjeta.concat(`<article class="salud">
+	tarjeta = tarjeta.concat(`<article class="otroAnimal">
 					 <img src="${prod.foto}" alt="${prod.nombre}">
                 <h3>${prod.nombre}</h3>
                 <p>${prod.descripcion}</p>
@@ -49,5 +49,5 @@ for (let prod of prods) {
                 <button>Comprar</button>
                 </article>`);  
 }
-document.getElementsByClassName("saludes")[0].innerHTML=tarjeta;
+document.getElementsByClassName("otrosAnimales")[0].innerHTML=tarjeta;
 

@@ -1,5 +1,5 @@
-let perros = productos.filter(p => p.tags.some((x) => x == "perro"))
-prods = perros.filter(p => p.tags.some((x) => x == "destacado"))
+let gatos = productos.filter(p => p.tags.some((x) => x == "gato"))
+prods = gatos.filter(p => p.tags.some((x) => x == "destacado"))
 let tarjeta = ``;
 for (let prod of prods) {
 	tarjeta = tarjeta.concat(`<article class="destacado">
@@ -12,7 +12,7 @@ for (let prod of prods) {
 }
 document.getElementsByClassName("destacados")[0].innerHTML=tarjeta;
 
-prods = perros.filter(p => p.tags.some((x) => x == "alimento"))
+prods = gatos.filter(p => p.tags.some((x) => x == "alimento"))
 tarjeta = ``;
 for (let prod of prods) {
 	tarjeta = tarjeta.concat(`<article class="alimento">
@@ -25,7 +25,7 @@ for (let prod of prods) {
 }
 document.getElementsByClassName("alimentos")[0].innerHTML=tarjeta;
 
-prods = perros.filter(p => p.tags.some((x) => x == "accesorio"))
+prods = gatos.filter(p => p.tags.some((x) => x == "accesorio"))
 tarjeta = ``;
 for (let prod of prods) {
 	tarjeta = tarjeta.concat(`<article class="accesorio">
@@ -38,7 +38,7 @@ for (let prod of prods) {
 }
 document.getElementsByClassName("accesorios")[0].innerHTML=tarjeta;
 
-prods = perros.filter(p => p.tags.some((x) => x == "salud"))
+prods = gatos.filter(p => p.tags.some((x) => x == "salud"))
 tarjeta = ``;
 for (let prod of prods) {
 	tarjeta = tarjeta.concat(`<article class="salud">
