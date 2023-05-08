@@ -117,10 +117,7 @@ h3 {
     font-size: 1.2em;
     font-weight: bolder;
   }
-  
-img {
-  padding: 5px;
-}
+
   
   /* Header */
 header {
@@ -129,18 +126,23 @@ header {
   }
   
 header img {
-  	width: 100px;
-	padding: 0px;
+  	width: 80px;
 }
 
 nav {
-  	background-color: rgb(255, 255, 255);
+  	border-color: solid 1px var(--color-1);
   	color: rgb(0, 0, 0);
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
   }
     
 nav ul {
     list-style: none;
+    flex: 1;
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -154,9 +156,8 @@ nav a {
     text-decoration: none;
   }
   
-nav a:hover, nav a:link, nav a:visited {
-    color: #fde9e2;
-    font-weight: bolder;    
+nav a:link, nav a:visited {
+    color: #000000;    
   }
 nav a:hover {
 	box-shadow: 0px 0px 83px 18px rgba(255, 97, 0, 0.33);
@@ -167,7 +168,7 @@ nav a:hover {
 }
 
 .dropdown-menu {
-	background-color: black;
+	background-color: rgb(255, 255, 255);
 	text-align: center;
 	display: none;
 	position: absolute;
@@ -187,9 +188,13 @@ nav a:hover {
 }
 
 nav img {
-  width: 20px;
-  height: 20px;
-  float: right;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+}
+
+#nav-icons {
+  margin-left: auto;
 }
 
   /* Main */

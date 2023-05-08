@@ -21,8 +21,10 @@ let hdr = `<h1>Mascotienda</h1>
                 </li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
+            <div id="nav-icons">
             <img src="img/user.png" alt="user-account">
             <img src="img/shoppingcart.png" alt="shopping-cart">
+            </div>
         </nav>`;
        
 let ftr = `<p>Mascotienda. mascotienda@gmail.com - cel: 1212-3131</p>
