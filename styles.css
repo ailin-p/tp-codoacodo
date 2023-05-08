@@ -134,8 +134,9 @@ header img {
 }
 
 nav {
-  	background-color: black;
-  	color: white;
+  	background-color: rgb(255, 255, 255);
+  	color: rgb(0, 0, 0);
+    width: 100%;
   }
     
 nav ul {
@@ -183,6 +184,12 @@ nav a:hover {
 
 .dropdown-menu li:last-child {
     margin-bottom: 0;
+}
+
+nav img {
+  width: 20px;
+  height: 20px;
+  float: right;
 }
 
   /* Main */
