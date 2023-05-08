@@ -22,8 +22,8 @@ let hdr = `<h1>Mascotienda</h1>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
             <div id="nav-icons">
-            <img src="img/user.png" alt="user-account">
-            <img src="img/shoppingcart.png" alt="shopping-cart">
+            <a href="#"><img src="img/user.png" alt="user-account"></a>
+            <a href="#"><img src="img/shoppingcart.png" alt="shopping-cart"></a>
             </div>
         </nav>`;
        
