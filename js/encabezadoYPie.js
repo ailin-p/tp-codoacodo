@@ -24,15 +24,15 @@ let hdr = `<h1>Mascotienda</h1>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
             <div id="nav-icons">
-            <a href="#"><img src="img/user.png" alt="user-account"></a>
-            <a href="#"><img src="img/shoppingcart.png" alt="shopping-cart"></a>
+            <a href="#"><i class="fa-regular fa-user" style="color: #000000; font-size: 18px; height: 18px; width: 18px;"></i></a>
+            <a href="#"><i class="fa-solid fa-cart-shopping" style="color: #000000; font-size: 18px; height: 18px; width: 18px;"></i></a>
             </div>
         </nav>
         `;
        
 let ftr = `<div id="social-icons">
-            <img src="/img/instagram.png" alt="instagram-icon">
-            <img src="/img/facebook.png" alt="facebook-icon">
+            <a href="#"><i class="fa-brands fa-instagram" style="color: #000000; font-size: 30px; height: 30px; width: 30px;"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook" style="color: #000000; font-size: 30px; height: 30px; width: 30px;"></i></a>
             </div>
             <p>MASCOTIENDA</p>`;
         
