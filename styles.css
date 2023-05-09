@@ -5,23 +5,13 @@
     padding: 0;
   }
   /* Aquí se define la paleta de colores*/
-  /* Colores de la paleta 13. */
 :root {
-  	--color-1: #e24e42; /*PAPAYA*/
-  	--color-2: #e9b000; /*MUSTARD*/
-  	--color-3: #008f95; /*AQUA*/
-   --color-4: #eb6e80; /*BLUSH*/
+  	--color-1: #DF744A;
+  	--color-2: #fed601;
+  	--color-3: #008f95;
+   --color-4: #eb6e80;
 
 }
-/* Colores de la paleta 07. */
-/*
-:root {
-  	--color-1: #000000; BLACK
-  	--color-2: #062f4f; INK
-   --color-3: #813772; POSY
-   --color-4: #b82601; EMBERS
-}
-*/
 
 /* Grid Columns */
 
@@ -120,9 +110,12 @@ h3 {
 
   
   /* Header */
+
+
+
 header {
     padding: 20px;
-    background-color: var(--color-1);
+    background: #DF744A;
   }
   
 header img {
@@ -130,7 +123,6 @@ header img {
 }
 
 nav {
-  	border-color: solid 1px var(--color-1);
   	color: rgb(0, 0, 0);
     width: 100%;
     display: flex;
@@ -191,6 +183,8 @@ nav img {
   width: 30px;
   height: 30px;
   padding: 5px;
+  margin: 0 auto;
+
 }
 
 #nav-icons {
@@ -208,7 +202,7 @@ main {
   /* Grillas */
  
 .container {
-	grid-gap: 20px;	
+	grid-gap: 20px;
 }
 
 .productos, .alimentos, .accesorios, .saludes, .perros, .gatos, .otrosAnimales {
