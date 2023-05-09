@@ -1,33 +1,35 @@
 let hdr = `<h1>Mascotienda</h1>
         <div id="header-img">
-        <img src="img/pet-shop.png" alt="paw">
+        <img src="img/pet-shop.png" alt="logo-petshop">
         </div>
         <nav>
             <ul>
-                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Inicio</a></li>
                 <li class="dropdown">
-                    <a href="#">Mascota</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="perro.html">Perro</a></li>
-                        <li><a href="gato.html">Gato</a></li>
-                        <li><a href="otroAnimal.html">Otros Animales</a></li>
-                    </ul>
+                <a href="#">Mascotas</a>
+                <ul>
+                    <li><a href="#">Perros</a></li>
+                    <li><a href="#">Gatos</a></li>
+                    <li><a href="#">Otras mascotas</a></li>
+                </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="#">Productos</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="alimento.html">Alimentación</a></li>
-                        <li><a href="accesorio.html">Accesorios</a></li>
-                        <li><a href="salud.html">Salud</a></li>
-                    </ul>
+                <a href="#">Productos</a>
+                <ul>
+                    <li><a href="#">Alimentación</a></li>
+                    <li><a href="#">Accesorios</a></li>
+                    <li><a href="#">Salud</a></li>
+                </ul>
                 </li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="#">Contacto</a></li>
             </ul>
+            
             <div id="nav-icons">
-            <a href="#"><i class="fa-regular fa-user" style="color: #000000; font-size: 18px; height: 18px; width: 18px;"></i></a>
-            <a href="#"><i class="fa-solid fa-cart-shopping" style="color: #000000; font-size: 18px; height: 18px; width: 18px;"></i></a>
+                <a href="#"><i class="fa-regular fa-user" style="color: #000000; font-size: 18px; height: 18px; width: 18px;"></i></a>
+                <a href="#"><i class="fa-solid fa-cart-shopping" style="color: #000000; font-size: 18px; height: 18px; width: 18px;"></i></a>
             </div>
         </nav>
+
         `;
        
 let ftr = `<div id="social-icons">

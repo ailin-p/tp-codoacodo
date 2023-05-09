@@ -107,9 +107,12 @@ h3 {
     font-size: 1.2em;
     font-weight: bolder;
   }
-
   
   /* Header */
+
+svg {
+  width: 100%;
+}
 
 header {
     padding: 20px;
@@ -121,72 +124,52 @@ header img {
 }
 
 nav {
-  	color: rgb(0, 0, 0);
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    margin-top: 10px;
-  }
-    
+  color: rgb(0, 0, 0);
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+}
+
+
 nav ul {
-    margin-left: 63px;
-    list-style: none;
-    flex: 1;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 nav li {
-    margin: 0 10px;
-    font-size: 18px;
-  }
-  
+  position: relative;
+}
+
 nav a {
-    text-decoration: none;
-  }
-  
-nav a:link, nav a:visited {
-    color: #000000;    
-  }
-
-.dropdown:hover .dropdown-menu {
-    display: block;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
 }
 
-.dropdown-menu {
-	background-color: rgb(255, 255, 255);
-	text-align: center;
-	display: none;
-	position: absolute;
-	top: 20;
-	left: 50;
-	padding: 10px;
-	z-index: 1;
+.dropdown ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
 }
 
-.dropdown-menu li {
-    display: block;
-    margin-bottom: 5px;
-}
-
-.dropdown-menu li:last-child {
-    margin-bottom: 0;
-}
-
-nav img {
-  width: 33px;
-  height: 33px;
-  padding: 5px;
-  margin: 0 auto;
-
+.dropdown:hover ul {
+  display: block;
 }
 
 #nav-icons {
-  margin-left: auto;
+  position: absolute;
+  right: 30px;
+  display: flex;
+}
+
+nav a:visited {
+  color: #000000;
 }
 
   /* Main */
