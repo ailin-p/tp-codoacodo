@@ -325,9 +325,11 @@ Media queries para otras vistas
 @media only screen and (max-width: 500px) {
   /* Estilos para pantalla de celulares */
   header {
+    padding: 0;
     background: #DF744A;
 }
 nav ul {
+  display: block;
   list-style: none;
   margin: 0;
   padding: 0;
