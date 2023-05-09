@@ -1,6 +1,7 @@
 let hdr = `<h1>Mascotienda</h1>
-        <img src="img/pawprint.png" alt="paw">
-        
+        <div id="header-img">
+        <img src="img/pet-shop.png" alt="paw">
+        </div>
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
