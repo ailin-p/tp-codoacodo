@@ -111,8 +111,6 @@ h3 {
   
   /* Header */
 
-
-
 header {
     padding: 20px;
     background: #DF744A;
@@ -142,6 +140,7 @@ nav ul {
   
 nav li {
     margin: 0 10px;
+    font-size: 18px;
   }
   
 nav a {
@@ -151,9 +150,6 @@ nav a {
 nav a:link, nav a:visited {
     color: #000000;    
   }
-nav a:hover {
-	box-shadow: 0px 0px 83px 18px rgba(255, 97, 0, 0.33);
-}
 
 .dropdown:hover .dropdown-menu {
     display: block;
@@ -180,8 +176,8 @@ nav a:hover {
 }
 
 nav img {
-  width: 30px;
-  height: 30px;
+  width: 33px;
+  height: 33px;
   padding: 5px;
   margin: 0 auto;
 
@@ -332,3 +328,4 @@ footer p {
   	color: #000000;
   	margin: 10px;
   }
+  

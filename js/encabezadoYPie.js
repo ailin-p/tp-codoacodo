@@ -33,7 +33,7 @@ let ftr = `<div id="social-icons">
             <img src="/img/instagram.png" alt="instagram-icon">
             <img src="/img/facebook.png" alt="facebook-icon">
             </div>
-            <p class="brand-name">MASCOTIENDA</p>`;
+            <p>MASCOTIENDA</p>`;
         
 document.getElementsByTagName("header").item(0).innerHTML=hdr;
 document.getElementsByTagName("footer").item(0).innerHTML=ftr;
