@@ -1,5 +1,7 @@
 let hdr = `<h1>Mascotienda</h1>
-        <img src="img/pawprint.png" alt="paw">
+        <div id="header-img">
+        <img src="img/pet-shop.png" alt="paw">
+        </div>
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
@@ -21,11 +23,18 @@ let hdr = `<h1>Mascotienda</h1>
                 </li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
-        </nav>`;
+            <div id="nav-icons">
+            <a href="#"><img src="img/user.png" alt="user-account"></a>
+            <a href="#"><img src="img/shoppingcart.png" alt="shopping-cart"></a>
+            </div>
+        </nav>
+        `;
        
-let ftr = `<p>Mascotienda. mascotienda@gmail.com - cel: 1212-3131</p>
-	<p>Webmaster: grupo incivil <b>"Las Huellas del Tigre"</b></p>
-	<p>Ningún derecho reservado</p>`;
+let ftr = `<div id="social-icons">
+            <img src="/img/instagram.png" alt="instagram-icon">
+            <img src="/img/facebook.png" alt="facebook-icon">
+            </div>
+            <p>MASCOTIENDA</p>`;
         
 document.getElementsByTagName("header").item(0).innerHTML=hdr;
 document.getElementsByTagName("footer").item(0).innerHTML=ftr;
