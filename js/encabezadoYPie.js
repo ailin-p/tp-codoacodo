@@ -4,24 +4,24 @@ let hdr = `<h1>Mascotienda</h1>
         </div>
         <nav>
             <ul>
-                <li><a href="#">Inicio</a></li>
+                <li><a href="/index.html">Inicio</a></li>
                 <li class="dropdown">
                 <a href="#">Mascotas</a>
                 <ul>
-                    <li><a href="#">Perros</a></li>
-                    <li><a href="#">Gatos</a></li>
-                    <li><a href="#">Otras mascotas</a></li>
+                    <li><a href="/perro.html">Perros</a></li>
+                    <li><a href="/gato.html">Gatos</a></li>
+                    <li><a href="/otroAnimal.html">Otras mascotas</a></li>
                 </ul>
                 </li>
                 <li class="dropdown">
                 <a href="#">Productos</a>
                 <ul>
-                    <li><a href="#">Alimentación</a></li>
-                    <li><a href="#">Accesorios</a></li>
-                    <li><a href="#">Salud</a></li>
+                    <li><a href="/alimento.html">Alimentación</a></li>
+                    <li><a href="/accesorio.html">Accesorios</a></li>
+                    <li><a href="/salud.html">Salud</a></li>
                 </ul>
                 </li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="/contacto.html">Contacto</a></li>
             </ul>
             
             <div id="nav-icons">
