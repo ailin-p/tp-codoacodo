@@ -130,6 +130,7 @@ nav {
   }
     
 nav ul {
+    margin-left: 63px;
     list-style: none;
     flex: 1;
     text-align: center;
