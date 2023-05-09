@@ -8,20 +8,20 @@ let hdr = `<h1>Mascotienda</h1>
                 <li class="dropdown">
                 <a href="#">Mascotas</a>
                 <ul>
-                    <li><a href="/perro.html">Perros</a></li>
-                    <li><a href="/gato.html">Gatos</a></li>
-                    <li><a href="/otroAnimal.html">Otras mascotas</a></li>
+                    <li><a href="perro.html">Perros</a></li>
+                    <li><a href="gato.html">Gatos</a></li>
+                    <li><a href="otroAnimal.html">Otras mascotas</a></li>
                 </ul>
                 </li>
                 <li class="dropdown">
                 <a href="#">Productos</a>
                 <ul>
-                    <li><a href="/alimento.html">Alimentación</a></li>
-                    <li><a href="/accesorio.html">Accesorios</a></li>
-                    <li><a href="/salud.html">Salud</a></li>
+                    <li><a href="alimento.html">Alimentación</a></li>
+                    <li><a href="accesorio.html">Accesorios</a></li>
+                    <li><a href="salud.html">Salud</a></li>
                 </ul>
                 </li>
-                <li><a href="/contacto.html">Contacto</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
             </ul>
             
             <div id="nav-icons">
