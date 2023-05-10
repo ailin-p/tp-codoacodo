@@ -3,6 +3,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    text-align: center;
   }
   /* Aquí se define la paleta de colores*/
 :root {
@@ -78,7 +79,7 @@ body {
   }
   
 h1 {
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Bebas Neue';
     display: inline-block;
     color: var(--color-2);
     margin: 0;
@@ -107,9 +108,12 @@ h3 {
     font-size: 1.2em;
     font-weight: bolder;
   }
-
   
   /* Header */
+
+svg {
+  width: 100%;
+}
 
 header {
     padding: 20px;
@@ -121,71 +125,52 @@ header img {
 }
 
 nav {
-  	color: rgb(0, 0, 0);
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-  }
-    
+  color: rgb(0, 0, 0);
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+}
+
+
 nav ul {
-    margin-left: 63px;
-    list-style: none;
-    flex: 1;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 nav li {
-    margin: 0 10px;
-    font-size: 18px;
-  }
-  
+  position: relative;
+}
+
 nav a {
-    text-decoration: none;
-  }
-  
-nav a:link, nav a:visited {
-    color: #000000;    
-  }
-
-.dropdown:hover .dropdown-menu {
-    display: block;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
 }
 
-.dropdown-menu {
-	background-color: rgb(255, 255, 255);
-	text-align: center;
-	display: none;
-	position: absolute;
-	top: 20;
-	left: 50;
-	padding: 10px;
-	z-index: 1;
+.dropdown ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
 }
 
-.dropdown-menu li {
-    display: block;
-    margin-bottom: 5px;
-}
-
-.dropdown-menu li:last-child {
-    margin-bottom: 0;
-}
-
-nav img {
-  width: 33px;
-  height: 33px;
-  padding: 5px;
-  margin: 0 auto;
-
+.dropdown:hover ul {
+  display: block;
 }
 
 #nav-icons {
-  margin-left: auto;
+  position: absolute;
+  right: 30px;
+  display: flex;
+}
+
+nav a:visited {
+  color: #000000;
 }
 
   /* Main */
@@ -195,31 +180,34 @@ main {
     height: 100%
     
   }
+
+main h2 {
+  text-align: center;
+}
   
   /* Grillas */
- 
-.container {
-	grid-gap: 20px;
-}
 
-.productos, .alimentos, .accesorios, .saludes, .perros, .gatos, .otrosAnimales {
+.productos, .alimentos, .accesorios, .saludes, .perros, .gatos, .otrosAnimales, .novedades, .destacados {
 	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	grid-gap: 20px;
-	align-items: stretch;
+	grid-gap: 50px;
+	align-items: center;
+  flex-flow: row wrap;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
   }
   
-.producto, .alimento, .accesorio, .salud, .perro, .gato, .otroAnimal {
-	width: 300px;
-	/*border: 2px solid var(--color-3);*/
+.producto, .alimento, .accesorio, .salud, .perro, .gato, .otroAnimal, .novedad, .destacado {
+	width: 330px;
+  height: 400px;
 	box-shadow: 2px 2px 6px 0px  var(--color-3);
 	padding: 7px;
 	border-radius: 10px;
 }
 
-.producto img, .alimento img, .accesorio img, .salud img, .perro img, .gato img, .otroAnimal img {
-  max-width: 100%;
+.producto img, .alimento img, .accesorio img, .salud img, .perro img, .gato img, .otroAnimal img, .novedad img, .destacado img {
+  width: 200px;
+  height: 200px;
 }
 
 .producto button, .alimento button, .accesorio button, .salud button, .perro button, .gato button, .otroAnimal button  {
@@ -229,26 +217,6 @@ main {
  	border: none;
  	border-radius: 3px;
   }
-  
-.novedades, .destacados {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	grid-gap: 20px;
-	justify-content: center;
-}
-  
-.novedad, .destacado  {
-	width: 300px;
-	/*border: 2px solid var(--color-4);*/
-	box-shadow: 2px 2px 6px 0px  var(--color-4);
-	padding: 7px;
-	border-radius: 10px;
-}
-
-.novedad img, .destacado img {
-  max-width: 100%;
-}
 
 .novedad button, .destacado button {
  	color: white;
@@ -329,4 +297,21 @@ footer p {
   	color: #000000;
   	margin: 10px;
   }
-  
+
+/*
+Media queries para otras vistas
+*/
+
+@media only screen and (max-width: 500px) {
+  /* Estilos para pantalla de celulares */
+  header {
+    padding: 0;
+    background: #DF744A;
+}
+nav ul {
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+}
