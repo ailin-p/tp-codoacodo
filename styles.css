@@ -3,6 +3,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    text-align: center;
   }
   /* Aquí se define la paleta de colores*/
 :root {
@@ -185,29 +186,28 @@ main h2 {
 }
   
   /* Grillas */
- 
-.container {
-	grid-gap: 20px;
-}
 
-.productos, .alimentos, .accesorios, .saludes, .perros, .gatos, .otrosAnimales {
+.productos, .alimentos, .accesorios, .saludes, .perros, .gatos, .otrosAnimales, .novedades, .destacados {
 	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	grid-gap: 20px;
-	align-items: stretch;
+	grid-gap: 50px;
+	align-items: center;
+  flex-flow: row wrap;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
   }
   
-.producto, .alimento, .accesorio, .salud, .perro, .gato, .otroAnimal {
-	width: 300px;
-	/*border: 2px solid var(--color-3);*/
+.producto, .alimento, .accesorio, .salud, .perro, .gato, .otroAnimal, .novedad, .destacado {
+	width: 330px;
+  height: 400px;
 	box-shadow: 2px 2px 6px 0px  var(--color-3);
 	padding: 7px;
 	border-radius: 10px;
 }
 
-.producto img, .alimento img, .accesorio img, .salud img, .perro img, .gato img, .otroAnimal img {
-  max-width: 100%;
+.producto img, .alimento img, .accesorio img, .salud img, .perro img, .gato img, .otroAnimal img, .novedad img, .destacado img {
+  width: 200px;
+  height: 200px;
 }
 
 .producto button, .alimento button, .accesorio button, .salud button, .perro button, .gato button, .otroAnimal button  {
@@ -217,26 +217,6 @@ main h2 {
  	border: none;
  	border-radius: 3px;
   }
-  
-.novedades, .destacados {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	grid-gap: 20px;
-	justify-content: center;
-}
-  
-.novedad, .destacado  {
-	width: 300px;
-	/*border: 2px solid var(--color-4);*/
-	box-shadow: 2px 2px 6px 0px  var(--color-4);
-	padding: 7px;
-	border-radius: 10px;
-}
-
-.novedad img, .destacado img {
-  max-width: 100%;
-}
 
 .novedad button, .destacado button {
  	color: white;

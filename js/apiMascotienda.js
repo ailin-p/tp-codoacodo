@@ -246,7 +246,7 @@
 		{
 		"id" : 30,
 		"nombre" : "Casita masticable de alfalfa – (M) Mediana – Zootec",
-		"descripcion" : "Brindan a su mascota un modo delicioso y divertido de jugar, roer y esconderse.",
+		"descripcion" : "Jugar, roer y esconderse.",
 		"foto" : "img/Casitamasticabledealfalfa–(M)Mediana–Zootec.png",
 		"precio" : 2000,
 		"tags" : ["otroAnimal","accesorio","destacado"]
