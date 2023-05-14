@@ -94,12 +94,12 @@ h2 {
     font-size: 1.3em;
     font-weight: bolder;
   }
-  
-h2.subtitulo {
-	 font-family: 'Expansiva','Good Time', 'Radio Space', monospace;
+
+  .subtitulo {
+    font-family: 'Roboto', sans-serif;
     font-size: 2.5em;
-    text-align: center;
-    font-weight: bolder;
+    letter-spacing: 3px;
+    margin: 20px;
   }
   
 h3 {
@@ -169,7 +169,7 @@ nav a {
   display: flex;
 }
 
-nav a:visited {
+nav a:visited{
   color: #000000;
 }
 
@@ -192,14 +192,14 @@ main h2 {
 	grid-gap: 50px;
 	align-items: center;
   flex-flow: row wrap;
-  margin: 0 auto;
+  margin: 80px;
   justify-content: center;
   align-items: center;
   }
   
 .producto, .alimento, .accesorio, .salud, .perro, .gato, .otroAnimal, .novedad, .destacado {
 	width: 330px;
-  height: 400px;
+  height: 450px;
 	box-shadow: 2px 2px 6px 0px  var(--color-3);
 	padding: 7px;
 	border-radius: 10px;
