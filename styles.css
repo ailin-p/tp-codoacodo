@@ -192,7 +192,7 @@ main h2 {
 	grid-gap: 50px;
 	align-items: center;
   flex-flow: row wrap;
-  margin: 80px;
+  margin-bottom: 80px;
   justify-content: center;
   align-items: center;
   }
@@ -314,4 +314,9 @@ nav ul {
   margin: 0;
   padding: 0;
 }
+
+.dropdown ul {
+  position: relative;
+}
+
 }
