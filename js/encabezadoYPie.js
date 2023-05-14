@@ -4,7 +4,7 @@ let hdr = `<h1>Mascotienda</h1>
         </div>
         <nav>
             <ul>
-                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="index.html">Inicio</a></li>
                 <li class="dropdown">
                 <a href="#">Mascotas</a>
                 <ul>
