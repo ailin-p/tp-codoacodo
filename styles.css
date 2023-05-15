@@ -33,7 +33,9 @@
 	float: left;
 	padding: 10px;
 }
-
+.row{
+overflow-y: scroll;
+}
 @media only screen and (max-width: 1300px) {	
 .col-m-1 {width: 8.33%;}
 .col-m-2 {width: 16.66%;}
@@ -181,6 +183,7 @@ nav > ul > li:hover > a::before {
 .dropdown ul li {
   background-color: gray;
   padding: 5px;
+  color: inherit;
 }
 
 .dropdown ul li a {
@@ -433,7 +436,7 @@ textarea {
   
 button[type="submit"] {
     background-color: var(--color-2);
-    color: white;
+    color: #000;
     padding: 10px 20px;
     border: none;
     border-radius: 3px;
