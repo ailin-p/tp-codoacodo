@@ -205,6 +205,7 @@ nav > ul > li:hover > a::before {
 
 #nav-icons a {
   margin-left: 10px;
+  text-decoration: none;
 }
 
 nav a:visited {
@@ -469,6 +470,10 @@ button[type="submit"]:hover {
     margin-top: 30px;
   }
 
+  .social-media li a {
+    text-decoration: none;
+  }
+
   #info li {
     text-align: center;
     margin: 5px;
@@ -493,6 +498,8 @@ button[type="submit"]:hover {
     border: none;
     margin-top: 10px;
   }
+
+
 
 /*
 Media queries para otras vistas
