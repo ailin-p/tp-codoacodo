@@ -153,6 +153,7 @@ nav a {
   display: block;
   padding: 10px;
   text-decoration: none;
+  color: inherit;
 }
 
 nav ul li a::before {
@@ -360,6 +361,13 @@ nav ul {
 
 .dropdown ul {
   position: relative;
+}
+
+#nav-icons {
+  position: absolute;
+  right: 30px;
+  display: flex;
+  flex-direction: column;
 }
 
 
