@@ -184,8 +184,6 @@ nav > ul > li:not(.dropdown):hover::before {
   transform: scaleX(1); /* Muestra el destacado al pasar el mouse */
 }
 
-
-
 .dropdown ul {
   display: none;
   position: absolute;
@@ -205,12 +203,10 @@ nav > ul > li:not(.dropdown):hover::before {
   background-color: #fed601; /* Cambia el fondo a un poco más oscuro */
 }
 
-
 .dropdown ul li a {
   text-decoration: none;
   font-family: 'PT Sans Narrow', sans-serif;
 }
-
 
 .dropdown:hover ul {
   display: block;
@@ -223,7 +219,7 @@ nav > ul > li:not(.dropdown):hover::before {
 }
 
 #nav-icons a {
-  margin-left: 10px;
+  margin-left: 15px;
   text-decoration: none;
 }
 
@@ -523,8 +519,6 @@ button[type="submit"]:hover {
     border: none;
     margin-top: 10px;
   }
-
-
 
 /*
 Media queries para otras vistas
