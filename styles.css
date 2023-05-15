@@ -308,7 +308,6 @@ button[type="submit"]:hover {
   #info i {
     margin: 5px;
   }
- 
   
   form .form-control {
     background-color: #fff;
@@ -344,6 +343,13 @@ nav ul {
 
 .dropdown ul {
   position: relative;
+}
+
+#nav-icons {
+  position: absolute;
+  right: 30px;
+  display: flex;
+  flex-direction: column;
 }
 
 }
