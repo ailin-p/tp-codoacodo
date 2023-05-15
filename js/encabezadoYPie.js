@@ -27,14 +27,14 @@ let hdr = `<h1>Mascotienda</h1>
             <div id="nav-icons">
                 <a href="#"><i class="fa-regular fa-user" style="color: #000000; font-size: 18px; height: 18px; width: 18px;"></i></a>
                 <a href="#"><i class="fa-solid fa-cart-shopping" style="color: #000000; font-size: 18px; height: 18px; width: 18px;"></i></a>
-            </div>
+                </div>
         </nav>
 
         `;
        
 let ftr = `<footer>
 <div class="container">
-    <div class="col-4 col-m-6 col-s-12">
+    <div class="col-4 col-m-4 col-s-12">
       <h3>Contacto</h3>
       <ul id="info">
         <li><i class="fa-solid fa-location-dot" style="color: #000000; font-size: 1.5em"></i>Alguna dirección 1570, Algún lugar, Argentina</li>
@@ -42,7 +42,7 @@ let ftr = `<footer>
         <li><i class="fa-solid fa-envelope" style="color: #000000; font-size: 1.5em"></i>info@mascotienda.com</li>
       </ul>
     </div>
-    <div class="col-4 col-m-6 col-s-12">
+    <div class="col-4 col-m-4 col-s-12">
       <h3>Síguenos</h3>
       <ul class="social-media">
       <li><a href="#"><i class="fa-brands fa-facebook" style="color: #000000; font-size: 1.5em"></i></a></li>
@@ -50,7 +50,7 @@ let ftr = `<footer>
         <li><a href="#"><i class="fa-brands fa-instagram" style="color: #000000; font-size: 1.5em"></i></a></li>
       </ul>
     </div>
-    <div class="col-4 col-m-6 col-s-12">
+    <div class="col-4 col-m-4 col-s-12">
       <h3>Newsletter</h3>
       <form>
         <div class="form-group">
