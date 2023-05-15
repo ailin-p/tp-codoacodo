@@ -25,15 +25,15 @@ let hdr = `<h1>Mascotienda</h1>
             </ul>
             
             <div id="nav-icons">
-                <a href="registrousu.html"><i class="fi fi-rr-user" style="color: #000000; font-size: 20px;"></i></a>
-                <a href="#"><i class="fi fi-rr-shopping-cart" style="color: #000000; font-size: 20px;"></i></a>
+                <a href="registrousu.html"><i class="fi fi-rr-user" style="color: #000000; font-size: 1.3em;"></i></a>
+                <a href="#"><i class="fi fi-rr-shopping-cart" style="color: #000000; font-size: 1.3em;"></i></a>
                 </div>
         </nav>
 
         `;
        
 let ftr = `<footer>
-<div class="container">
+<div class="container-footer">
     <div class="col-4 col-m-4 col-s-12">
       <h3>Contacto</h3>
       <ul id="info">
