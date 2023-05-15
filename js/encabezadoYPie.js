@@ -26,7 +26,7 @@ let hdr = `<h1>Mascotienda</h1>
             
             <div id="nav-icons">
                 <a href="registrousu.html"><i class="fa-regular fa-user" style="color: #000000; font-size: 18px; height: 18px; width: 18px;"></i></a>
-                <a href="#"><i class="fa-solid fa-cart-shopping" style="color: #000000; font-size: 18px; height: 18px; width: 18px;"></i></a>
+                <a href="#"><i class="fas fa-shopping-cart" style="color: #000000; font-size: 18px; height: 18px; width: 18px;"></i></a>
                 </div>
         </nav>
 
