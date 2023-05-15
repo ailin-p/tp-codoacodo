@@ -5,6 +5,12 @@
     padding: 0;
     text-align: center;
   }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
   /* Aquí se define la paleta de colores*/
 :root {
   	--color-1: #DF744A;
