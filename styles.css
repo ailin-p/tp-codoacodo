@@ -168,7 +168,7 @@ nav > ul > li > a {
   letter-spacing: 1.5px;
 }
 
-nav ul li:not(.dropdown)::before {
+nav ul > li:not(.dropdown)::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -180,9 +180,11 @@ nav ul li:not(.dropdown)::before {
   transition: transform 0.3s ease-in-out; /* Animación del destacado */
 }
 
-nav ul li:not(.dropdown):hover::before {
+nav > ul > li:not(.dropdown):hover::before {
   transform: scaleX(1); /* Muestra el destacado al pasar el mouse */
 }
+
+
 
 .dropdown ul {
   display: none;
