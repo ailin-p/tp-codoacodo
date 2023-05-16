@@ -273,16 +273,13 @@ main h2 {
   }
   
  .descrip {
-  display: none;
+  opacity: 0;
  }
 
- .producto:hover .descrip {
-  display: block;
+ .producto:hover .descrip, .novedad:hover .descrip, .destacado:hover .descrip, .alimento:hover .descrip, .accesorio:hover .descrip, .salud:hover .descrip, .perro:hover .descrip, .gato:hover .descrip, .otroAnimal:hover .descrip {
+  opacity: 1;
  }
 
- .novedad:hover .descrip {
-  display: block;
- }
   
   .producto h4, .destacados h4, .alimento h4, .accesorio h4, .salud h4, .perro h4, .gato h4, .otroAnimal h4, .novedad h4, .destacado h4{
     font-size: 18px;
