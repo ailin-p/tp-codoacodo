@@ -175,13 +175,13 @@ nav ul > li:not(.dropdown)::before {
   left: 0;
   width: 100%;
   height: 3px;
-  background-color: var(--color-2); /* Color de destacado */
-  transform: scaleX(0); /* Inicialmente oculto */
-  transition: transform 0.3s ease-in-out; /* Animación del destacado */
+  background-color: var(--color-2); 
+  transform: scaleX(0); /* con el valor en 0 no se muestra en un principio */
+  transition: transform 0.3s ease-in-out; /* caracteristicas de la animación */
 }
 
 nav > ul > li:not(.dropdown):hover::before {
-  transform: scaleX(1); /* Muestra el destacado al pasar el mouse */
+  transform: scaleX(1); /* en el eje x con el valor 1 hace que se muestre la linea */
 }
 
 .dropdown ul {
@@ -200,7 +200,7 @@ nav > ul > li:not(.dropdown):hover::before {
 }
 
 .dropdown ul li:hover {
-  background-color: #fed601; /* Cambia el fondo a un poco más oscuro */
+  background-color: #fed601; /* cambio a un color con mas contraste para que se note el hover */
 }
 
 .dropdown ul li a {
@@ -237,62 +237,85 @@ main {
 
 main h2 {
   text-align: center;
+  margin: 15px;
 }
   
   /* Grillas */
-
-.productos, .alimentos, .accesorios, .saludes, .perros, .gatos, .otrosAnimales, .novedades, .destacados {
-	display: flex;
-	grid-gap: 50px;
-	align-items: center;
-  flex-flow: row wrap;
-  margin-bottom: 80px;
-  justify-content: center;
-  align-items: center;
+ 
+  .productos, .alimentos, .accesorios, .saludes, .perros, .gatos, .otrosAnimales, .novedades, .destacados, .novedad {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
   }
   
-.producto, .alimento, .accesorio, .salud, .perro, .gato, .otroAnimal, .novedad, .destacado {
-	width: 330px;
-  height: 450px;
-	box-shadow: 2px 2px 6px 0px  var(--color-3);
-	padding: 7px;
-	border-radius: 10px;
-}
-
-.producto img, .alimento img, .accesorio img, .salud img, .perro img, .gato img, .otroAnimal img, .novedad img, .destacado img {
-  width: 200px;
-  height: 200px;
-}
-
-.producto button, .alimento button, .accesorio button, .salud button, .perro button, .gato button, .otroAnimal button  {
- 	color: white;
- 	background-color: var(--color-3);
- 	padding: 10px 20px;
- 	border: none;
- 	border-radius: 3px;
-  }
-
-.novedad button, .destacado button {
- 	color: white;
- 	background-color: var(--color-4);
- 	padding: 10px 20px;
- 	border: none;
- 	border-radius: 3px;
+  .producto, .alimento, .accesorio, .salud, .perro, .gato, .otroAnimal, .novedad, .destacado {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #d2d2d2;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(223, 116, 74, 0.2); /* Modificado: Color de sombra */
+    background-color: #fff;
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
   }
   
-  
-.text {
-  padding: 0 20px 20px;
-}
-
-.text button {
-  background: gray;
-  border: 0;
-  color: white;
-  padding: 10px;
-  width: 100%;
+  .producto:hover, .alimento:hover, .accesorio:hover, .salud:hover, .perro:hover, .gato:hover, .otroAnimal:hover, .novedad:hover, .destacado:hover {
+    box-shadow: 0 8px 16px rgba(223, 116, 74, 0.3); /* Modificado: Color de sombra en hover */
+    transform: translate(0, -5px);
   }
   
+  .producto img, .destacados img, .alimento img, .accesorio img, .salud img, .perro img, .gato img, .otroAnimal img, .novedad img, .destacado img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .producto h3, .destacados h3, .alimento h3, .accesorio h3, .salud h3, .perro h3, .gato h3, .otroAnimal h3, .novedad h3, .destacado h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  /* .producto p, .destacados p, .alimento p, .accesorio p, .salud p, .perro p, .gato p, .otroAnimal p, .novedad p, .destacado p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  } */
+  
+  .producto h4, .destacados h4, .alimento h4, .accesorio h4, .salud h4, .perro h4, .gato h4, .otroAnimal h4, .novedad h4, .destacado h4{
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .producto button, .destacados button, .alimento button, .accesorio button, .salud button, .perro button, .gato button, .otroAnimal button, .novedad button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: var(--color-2);
+    color: #000000;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .producto button:hover, .destacados button:hover, .alimento button:hover, .accesorio button:hover, .salud button:hover, .perro button:hover, .gato button:hover, .otroAnimal button:hover, .novedad button:hover, .destacado button:hover {
+    background-color: var(--color-4);
+  }
+  
+  .producto button:focus, .destacados button:focus, .alimento button:focus, .accesorio button:focus, .salud button:focus, .perro button:focus, .gato button:focus, .otroAnimal button:focus, .novedad button:focus, .destacado button:focus {
+    outline: none;
+  }
+  
+  .producto button:active, .destacados button:active, .alimento button:active, .accesorio button:active, .salud button:active, .perro button:active, .gato button:active, .otroAnimal button:active, .novedad button:active, .destacado button:active {
+    background-color: #3e8e41;
+    transform: translateY(1px);
+  }
 
   /* Formulario de registro */
   
