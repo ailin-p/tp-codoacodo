@@ -5,7 +5,7 @@ for (let prod of prods) {
 	tarjeta = tarjeta.concat(`<article class="destacado">
 					 <img src="${prod.foto}" alt="${prod.nombre}">
                 <h3>${prod.nombre}</h3>
-                <p>${prod.descripcion}</p>
+                <p class="descrip">${prod.descripcion}</p>
                 <h4>$${prod.precio}</h4>
                 <button>Comprar</button>
                 </article>`);  
@@ -18,7 +18,7 @@ for (let prod of prods) {
 	tarjeta = tarjeta.concat(`<article class="gato">
 					 <img src="${prod.foto}" alt="${prod.nombre}">
                 <h3>${prod.nombre}</h3>
-                <p>${prod.descripcion}</p>
+                <p class="descrip">${prod.descripcion}</p>
                 <h4>$${prod.precio}</h4>
                 <button>Comprar</button>
                 </article>`);  
@@ -31,7 +31,7 @@ for (let prod of prods) {
 	tarjeta = tarjeta.concat(`<article class="perro">
 					 <img src="${prod.foto}" alt="${prod.nombre}">
                 <h3>${prod.nombre}</h3>
-                <p>${prod.descripcion}</p>
+                <p class="descrip">${prod.descripcion}</p>
                 <h4>$${prod.precio}</h4>
                 <button>Comprar</button>
                 </article>`);  
@@ -44,7 +44,7 @@ for (let prod of prods) {
 	tarjeta = tarjeta.concat(`<article class="otroAnimal">
 					 <img src="${prod.foto}" alt="${prod.nombre}">
                 <h3>${prod.nombre}</h3>
-                <p>${prod.descripcion}</p>
+                <p class="descrip">${prod.descripcion}</p>
                 <h4>$${prod.precio}</h4>
                 <button>Comprar</button>
                 </article>`);  
