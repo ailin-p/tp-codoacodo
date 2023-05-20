@@ -15,11 +15,11 @@ let promesa1 = pf.animal.search()
 
 promesa1.then((value) => {
  	animales = value;
-   console.log(value);
   // Expected output: 123
    for (let i = 0; i < 4; i++) {
 		const unaDiapo = document.createElement("div");
 		unaDiapo.className = "slide";
+		unaDiapo.style.zIndex = 3 - i;
 		const unaFoto = document.createElement("img")
 		if (value[i].photos.length != 0) {
 			unaFoto.src = value[i].photos[0].medium;
@@ -55,8 +55,6 @@ promesa1.then((value) => {
 		btnPrev.innerHTML = "<";
 		btnPrev.className = "btn btn-prev";		
 	document.getElementsByClassName("slider")[0].appendChild(btnPrev);
-	crearCarrousell(slides);
-	
-	
+	crearCarrousell(slides);	
 })
 

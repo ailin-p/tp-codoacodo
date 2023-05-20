@@ -1,7 +1,7 @@
 section.slider {
   	height: 50vh;
-  	display: grid;
-  	place-items: center;
+  	display: flex;
+  	justify-content: center;
 }
 
 .slider {
@@ -9,7 +9,7 @@ section.slider {
   max-width: 800px;
   height: 500px;
   position: relative;
-  overflow: hidden;  /* <===  */
+  overflow: hidden;
   border-radius: 15px;
 }
 
@@ -18,7 +18,9 @@ section.slider {
   max-width: 800px;
   height: 500px;
   position: absolute;
+  background-color: #555555;
   transition: all 0.5s;
+  border-radius: 8px;
 }
 
 .slide img {
@@ -34,7 +36,7 @@ section.slider {
   padding: 10px;
   border: none;
   border-radius: 50%;
-  z-index: 10px;
+  z-index: 10;
   cursor: pointer;
   background-color: #fff;
   font-size: 18px;
