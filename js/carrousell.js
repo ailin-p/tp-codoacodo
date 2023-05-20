@@ -1,10 +1,10 @@
-async function crearCarrousell(slides) {
+function crearCarrousell(slides) {
 
 	const nextSlide = document.querySelector(".btn-next");
 
 	nextSlide.addEventListener("click", function () {
 	  for (j of slides) {
-			j.style.zIndex = (parseInt(j.style.zIndex) + 1) % 4;
+			j.style.zIndex = (parseInt(j.style.zIndex) + 1) % slides.length;
 		}
 	});
 
@@ -12,7 +12,7 @@ async function crearCarrousell(slides) {
 
 	prevSlide.addEventListener("click", function () {
 		for (j of slides) {
-			j.style.zIndex = (parseInt(j.style.zIndex) + 3) % 4;
+			j.style.zIndex = (parseInt(j.style.zIndex) + slides.length - 1) % slides.length;
 		}
 	});
 }

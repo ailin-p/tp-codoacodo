@@ -13,18 +13,21 @@ let promesa1 = pf.animal.search({limit: 100,})
     });
 
 promesa1.then((value) => {
- 	let cantDeDiapos = 4;
+	let cantDeDiapos = 4;
  	let i = 0;
  	let j = 0;
  	while ((i < cantDeDiapos) && (j < 101)) {
  		if (value[i].photos.length != 0) {
   			const unaDiapo = document.createElement("div");
 			unaDiapo.className = "slide";
-			unaDiapo.style.zIndex = cantDeDiapos - i - 1;
-			const unaFoto = document.createElement("img")		
-			unaFoto.src = value[i].photos[0].medium;
-			unaFoto.alt = value[i].description;
-			unaDiapo.appendChild(unaFoto);
+			unaDiapo.style.zIndex = cantDeDiapos - i - 1;			
+			const unLinckDeImg = document.createElement("a");
+			unLinckDeImg.href = value[i].url;			
+				const unaFoto = document.createElement("img")		
+				unaFoto.src = value[i].photos[0].medium;
+				unaFoto.alt = value[i].description;
+				unLinckDeImg.appendChild(unaFoto);			
+			unaDiapo.appendChild(unLinckDeImg);			
 			const unNombre = document.createElement("h3");
 			unNombre.innerHTML = value[i].name;
 			unaDiapo.appendChild(unNombre);
@@ -50,7 +53,7 @@ promesa1.then((value) => {
 			i++;
 		};
 		j++
-  }
+  };
 	console.log(slides);
 	const btnNext = document.createElement("button");
 		btnNext.innerHTML = ">";
@@ -60,6 +63,8 @@ promesa1.then((value) => {
 		btnPrev.innerHTML = "<";
 		btnPrev.className = "btn btn-prev";		
 	document.getElementsByClassName("slider")[0].appendChild(btnPrev);
-	crearCarrousell(slides);	
-})
+	crearCarrousell(slides);
+});
+
+
 
