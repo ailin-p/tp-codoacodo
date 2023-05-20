@@ -4,7 +4,7 @@ var slides = [];
 
 var pf = new petfinder.Client({apiKey: keyPetFinder, secret: secretPetFinder});
 
-let promesa1 = pf.animal.search()
+let promesa1 = pf.animal.search({limit: 100,})
 	 .then(function (response) {
         return response.data.animals
     })
@@ -13,10 +13,10 @@ let promesa1 = pf.animal.search()
     });
 
 promesa1.then((value) => {
- 	let cantDeDiapos = 4;  
+ 	let cantDeDiapos = 4;
  	let i = 0;
  	let j = 0;
- 	while ((i < cantDeDiapos) && (j < 15)) {
+ 	while ((i < cantDeDiapos) && (j < 101)) {
  		if (value[i].photos.length != 0) {
   			const unaDiapo = document.createElement("div");
 			unaDiapo.className = "slide";
@@ -34,12 +34,17 @@ promesa1.then((value) => {
 			const unSexo = document.createElement("p");
 			unSexo.innerHTML = value[i].gender;
 			unaDiapo.appendChild(unSexo);
-			const unTamanio = document.createElement("p");
-			unTamanio.innerHTML = value[i].size;
-			unaDiapo.appendChild(unTamanio);
-			const unContacto = document.createElement("h4");
+//			const unTamanio = document.createElement("p");
+//			unTamanio.innerHTML = value[i].size;
+//			unaDiapo.appendChild(unTamanio);
+			const unContacto = document.createElement("a");
 			unContacto.innerHTML = value[i].contact.email;
+			unContacto.href = "mailto:".concat(value[i].contact.email);
 			unaDiapo.appendChild(unContacto);
+			const unaURL = document.createElement("a");
+			unaURL.innerHTML = "    --    ver en PetFinder";
+			unaURL.href = value[i].url;
+			unaDiapo.appendChild(unaURL);
 			document.getElementsByClassName("slider")[0].appendChild(unaDiapo);
 			slides.push(unaDiapo);
 			i++;

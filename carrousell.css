@@ -1,15 +1,12 @@
-section.slider {
-  	height: 50vh;
-  	display: flex;
-  	justify-content: center;
-}
-
 .slider {
+	height: 50vh;
+  display: flex;
+  justify-content: center;
   width: 100%;
   max-width: 800px;
   height: 500px;
   position: relative;
-  overflow: hidden;
+/*  overflow: hidden;*/
   border-radius: 15px;
 }
 
@@ -18,14 +15,14 @@ section.slider {
   max-width: 800px;
   height: 500px;
   position: absolute;
-  background-color: #555555;
+  background-color: rgba(223, 116, 74);
   transition: all 0.5s;
   border-radius: 8px;
 }
 
 .slide img {
-  width: 50%;
-  height: 50%;
+  width: 75%;
+  height: 75%;
   object-fit: cover;
 }
 
