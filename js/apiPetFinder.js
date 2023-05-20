@@ -15,18 +15,17 @@ let promesa1 = pf.animal.search()
 
 promesa1.then((value) => {
  	animales = value;
-  // Expected output: 123
-   for (let i = 0; i < 4; i++) {
-		const unaDiapo = document.createElement("div");
+ 	let i = 0;
+ 	while (i <= 4) {
+  		const unaDiapo = document.createElement("div");
 		unaDiapo.className = "slide";
 		unaDiapo.style.zIndex = 3 - i;
 		const unaFoto = document.createElement("img")
 		if (value[i].photos.length != 0) {
 			unaFoto.src = value[i].photos[0].medium;
-		} else {
-			unaFoto.src = "";
-		}
-		unaFoto.alt = value[i].description;
+			unaFoto.alt = value[i].description;
+			i++;
+		};
 		unaDiapo.appendChild(unaFoto);
 		const unNombre = document.createElement("h3");
 		unNombre.innerHTML = value[i].name;
@@ -45,7 +44,7 @@ promesa1.then((value) => {
 		unaDiapo.appendChild(unContacto);
 		document.getElementsByClassName("slider")[0].appendChild(unaDiapo);
 		slides.push(unaDiapo);
-		}
+  }
 	console.log(slides);
 	const btnNext = document.createElement("button");
 		btnNext.innerHTML = ">";
