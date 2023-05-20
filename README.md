@@ -83,3 +83,27 @@ Observar que el nombre de la imagen debe iniciarse con el nombre de la carpeta i
 |Alimentos		|			4		|			4		|			4		 |
 |Accesorios		|			4		|			4		|			4		 |
 |Salud			|			4		|			4		|			4		 |
+
+Habría que decidir qué y cuantos productos se incluyen como "destacado" y "novedad". Yo pondría uno de cada tag en cada animal.
+
+## Carrousell que consume la api PetFinder
+1. En el head debe contener
+```
+   <link href="carrousell.css" rel="stylesheet">
+   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script src="https://unpkg.com/@petfinder/petfinder-js/dist/petfinder.min.js"></script>  
+```
+2. También debe incluir los dos siguientes js
+```
+ 	<script src="js/apiPetFinder.js"></script>
+  	<script src="js/carrousell.js"></script>
+```
+3. El html incluye una sección para el carrousel con una clase "slider"
+```
+    <h2>! Hay mascotas que esperan que las adoptes !</h2>
+  <section>
+    <div class="slider">
+   <!-- Aquí el contenido lo inserta js -->
+    </div>
+  </section>
+  ```
