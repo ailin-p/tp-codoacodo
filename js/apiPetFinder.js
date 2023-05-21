@@ -54,11 +54,11 @@ promesa1.then((value) => {
 	console.log(slides);
 	const btnNext = document.createElement("button");
 		btnNext.innerHTML = ">";
-		btnNext.className = "btn btn-next";		
+		btnNext.className = "btn-slider btn-slider-next";		
 	document.getElementsByClassName("slider")[0].appendChild(btnNext);
 	const btnPrev = document.createElement("button");
 		btnPrev.innerHTML = "<";
-		btnPrev.className = "btn btn-prev";		
+		btnPrev.className = "btn-slider btn-slider-prev";		
 	document.getElementsByClassName("slider")[0].appendChild(btnPrev);
 	crearCarrousell(slides);
 });

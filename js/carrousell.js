@@ -1,6 +1,6 @@
 function crearCarrousell(slides) {
 
-	const nextSlide = document.querySelector(".btn-next");
+	const nextSlide = document.querySelector(".btn-slider-next");
 
 	nextSlide.addEventListener("click", function () {
 	  for (j of slides) {
@@ -8,7 +8,7 @@ function crearCarrousell(slides) {
 		}
 	});
 
-	const prevSlide = document.querySelector(".btn-prev");
+	const prevSlide = document.querySelector(".btn-slider-prev");
 
 	prevSlide.addEventListener("click", function () {
 		for (j of slides) {
