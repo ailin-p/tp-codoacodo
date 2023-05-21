@@ -32,7 +32,7 @@ let hdr = `<h1>Mascotienda</h1>
 
         `;
        
-let ftr = `<footer>
+let ftr = `
 <div class="container-footer">
     <div class="col-4 col-m-4 col-s-12">
       <h3>Contacto</h3>
@@ -63,7 +63,6 @@ let ftr = `<footer>
 <div class="bottom-footer">
   <p>&copy; 2023 Mascotienda. Todos los derechos reservados.</p>
 </div>
-</footer>
 `;
         
 document.getElementsByTagName("header").item(0).innerHTML=hdr;
