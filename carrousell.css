@@ -1,3 +1,4 @@
+
 .slider {
 	height: 50vh;
 	display: flex;
@@ -15,14 +16,14 @@
 	max-width: 800px;
 	height: 500px;
 	position: absolute;
-	background-color: rgba(223, 116, 74);
 	transition: all 0.5s;
 	border-radius: 8px;
 }
 	
 .slide img {
-	width: 75%;
-	height: 75%;
+	margin: 15px;
+	width: 65%;
+	height: 65%;
 	object-fit: contain;
 }
 	
@@ -41,6 +42,10 @@
 	
 .btn-slider:active {
 	transform: scale(1.1);
+}
+
+.btn-slider:hover{
+	background-color: #008f95;
 }
 	
 .btn-slider-prev {

@@ -267,8 +267,6 @@ main h2 {
   .producto img, .destacados img, .alimento img, .accesorio img, .salud img, .perro img, .gato img, .otroAnimal img, .novedad img, .destacado img {
     width: 200px;
     height: 200px;
-    object-fit: cover;
-    border-radius: 50%;
     margin-bottom: 10px;
   }
   

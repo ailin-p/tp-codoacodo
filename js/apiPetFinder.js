@@ -21,13 +21,13 @@ promesa1.then((value) => {
   			const unaDiapo = document.createElement("div");
 			unaDiapo.className = "slide";
 			unaDiapo.style.zIndex = maxDiapos - i - 1;			
-				const unLinckDeImg = document.createElement("a");
-				unLinckDeImg.href = value[i].url;			
+				const unLinkDeImg = document.createElement("a");
+				unLinkDeImg.href = value[i].url;			
 					const unaFoto = document.createElement("img")		
 					unaFoto.src = value[i].photos[0].medium;
 					unaFoto.alt = value[i].description;
-					unLinckDeImg.appendChild(unaFoto);			
-				unaDiapo.appendChild(unLinckDeImg);			
+					unLinkDeImg.appendChild(unaFoto);			
+				unaDiapo.appendChild(unLinkDeImg);			
 				const unNombre = document.createElement("h3");
 				unNombre.innerHTML = value[i].name;
 				unaDiapo.appendChild(unNombre);
@@ -42,7 +42,7 @@ promesa1.then((value) => {
 				unContacto.href = "mailto:".concat(value[i].contact.email);
 				unaDiapo.appendChild(unContacto);
 				const unaURL = document.createElement("a");
-				unaURL.innerHTML = "    --    ver en PetFinder";
+				unaURL.innerHTML = " - ver en PetFinder";
 				unaURL.href = value[i].url;
 				unaDiapo.appendChild(unaURL);
 			document.getElementsByClassName("slider")[0].appendChild(unaDiapo);
