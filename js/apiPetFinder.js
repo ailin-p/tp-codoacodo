@@ -13,41 +13,38 @@ let promesa1 = pf.animal.search({limit: 100,})
     });
 
 promesa1.then((value) => {
-	let cantDeDiapos = 4;
+	let maxDiapos = 4;
  	let i = 0;
  	let j = 0;
- 	while ((i < cantDeDiapos) && (j < 101)) {
- 		if (value[i].photos.length != 0) {
+ 	while ((i < maxDiapos) && (j < 101)) {
+ 		if (value[i].photos[0] != undefined) {
   			const unaDiapo = document.createElement("div");
 			unaDiapo.className = "slide";
-			unaDiapo.style.zIndex = cantDeDiapos - i - 1;			
-			const unLinckDeImg = document.createElement("a");
-			unLinckDeImg.href = value[i].url;			
-				const unaFoto = document.createElement("img")		
-				unaFoto.src = value[i].photos[0].medium;
-				unaFoto.alt = value[i].description;
-				unLinckDeImg.appendChild(unaFoto);			
-			unaDiapo.appendChild(unLinckDeImg);			
-			const unNombre = document.createElement("h3");
-			unNombre.innerHTML = value[i].name;
-			unaDiapo.appendChild(unNombre);
-			const unaEspecie = document.createElement("p");
-			unaEspecie.innerHTML = value[i].species;
-			unaDiapo.appendChild(unaEspecie);
-			const unSexo = document.createElement("p");
-			unSexo.innerHTML = value[i].gender;
-			unaDiapo.appendChild(unSexo);
-//			const unTamanio = document.createElement("p");
-//			unTamanio.innerHTML = value[i].size;
-//			unaDiapo.appendChild(unTamanio);
-			const unContacto = document.createElement("a");
-			unContacto.innerHTML = value[i].contact.email;
-			unContacto.href = "mailto:".concat(value[i].contact.email);
-			unaDiapo.appendChild(unContacto);
-			const unaURL = document.createElement("a");
-			unaURL.innerHTML = "    --    ver en PetFinder";
-			unaURL.href = value[i].url;
-			unaDiapo.appendChild(unaURL);
+			unaDiapo.style.zIndex = maxDiapos - i - 1;			
+				const unLinckDeImg = document.createElement("a");
+				unLinckDeImg.href = value[i].url;			
+					const unaFoto = document.createElement("img")		
+					unaFoto.src = value[i].photos[0].medium;
+					unaFoto.alt = value[i].description;
+					unLinckDeImg.appendChild(unaFoto);			
+				unaDiapo.appendChild(unLinckDeImg);			
+				const unNombre = document.createElement("h3");
+				unNombre.innerHTML = value[i].name;
+				unaDiapo.appendChild(unNombre);
+				const unaEspecie = document.createElement("p");
+				unaEspecie.innerHTML = value[i].species;
+				unaDiapo.appendChild(unaEspecie);
+				const unSexo = document.createElement("p");
+				unSexo.innerHTML = value[i].gender;
+				unaDiapo.appendChild(unSexo);
+				const unContacto = document.createElement("a");
+				unContacto.innerHTML = value[i].contact.email;
+				unContacto.href = "mailto:".concat(value[i].contact.email);
+				unaDiapo.appendChild(unContacto);
+				const unaURL = document.createElement("a");
+				unaURL.innerHTML = "    --    ver en PetFinder";
+				unaURL.href = value[i].url;
+				unaDiapo.appendChild(unaURL);
 			document.getElementsByClassName("slider")[0].appendChild(unaDiapo);
 			slides.push(unaDiapo);
 			i++;

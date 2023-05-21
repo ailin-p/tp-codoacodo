@@ -100,7 +100,7 @@ Habría que decidir qué y cuantos productos se incluyen como "destacado" y "nov
 ```
 3. El html incluye una sección para el carrousel con una clase "slider"
 ```
-    <h2>! Hay mascotas que esperan que las adoptes !</h2>
+    <h2>! Hay mascotas esperando que las adoptes !</h2>
   <section>
     <div class="slider">
    <!-- Aquí el contenido lo inserta js -->
