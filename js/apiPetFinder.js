@@ -16,34 +16,36 @@ promesa1.then((value) => {
 	let maxDiapos = 4;
  	let i = 0;
  	let j = 0;
- 	while ((i < maxDiapos) && (j < 101)) {
- 		if (value[i].photos[0] != undefined) {
+ 	while ((i < maxDiapos) && (j < 100)) {
+		const animalObject = value[j]
+ 		if (animalObject.photos[0] != undefined) {
   			const unaDiapo = document.createElement("div");
 			unaDiapo.className = "slide";
 			unaDiapo.style.zIndex = maxDiapos - i - 1;			
 				const unLinkDeImg = document.createElement("a");
-				unLinkDeImg.href = value[i].url;			
+				unLinkDeImg.href = animalObject.url;			
 					const unaFoto = document.createElement("img")		
-					unaFoto.src = value[i].photos[0].medium;
-					unaFoto.alt = value[i].description;
+					unaFoto.src = animalObject.photos[0].medium;
+					unaFoto.alt = animalObject.description;
 					unLinkDeImg.appendChild(unaFoto);			
 				unaDiapo.appendChild(unLinkDeImg);			
 				const unNombre = document.createElement("h3");
-				unNombre.innerHTML = value[i].name;
+				unNombre.innerHTML = animalObject.name;
 				unaDiapo.appendChild(unNombre);
 				const unaEspecie = document.createElement("p");
-				unaEspecie.innerHTML = value[i].species;
+				unaEspecie.innerHTML = animalObject.species;
 				unaDiapo.appendChild(unaEspecie);
 				const unSexo = document.createElement("p");
-				unSexo.innerHTML = value[i].gender;
+				unSexo.innerHTML = animalObject.gender;
 				unaDiapo.appendChild(unSexo);
 				const unContacto = document.createElement("a");
-				unContacto.innerHTML = value[i].contact.email;
-				unContacto.href = "mailto:".concat(value[i].contact.email);
+				const contactEmail = animalObject.contact.email
+				unContacto.innerHTML = contactEmail;
+				unContacto.href = "mailto:".concat(contactEmail);
 				unaDiapo.appendChild(unContacto);
 				const unaURL = document.createElement("a");
 				unaURL.innerHTML = " - ver en PetFinder";
-				unaURL.href = value[i].url;
+				unaURL.href = animalObject.url;
 				unaDiapo.appendChild(unaURL);
 			document.getElementsByClassName("slider")[0].appendChild(unaDiapo);
 			slides.push(unaDiapo);
