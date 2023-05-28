@@ -31,7 +31,6 @@ let hdr = `<h1>Mascotienda</h1>
                                 <svg
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
-                          viewBox="0 0 25 25"
                           stroke-width="1.5"
                           stroke="currentColor"
                           class="icon-cart"
