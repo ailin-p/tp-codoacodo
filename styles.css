@@ -213,7 +213,6 @@ nav > ul > li:not(.dropdown):hover::before {
 }
 
 #nav-icons a {
-  margin-left: 15px;
   text-decoration: none;
 }
 
@@ -281,7 +280,7 @@ main h2 {
  }
 
   
-  .producto h4, .destacados h4, .alimento h4, .accesorio h4, .salud h4, .perro h4, .gato h4, .otroAnimal h4, .novedad h4, .destacado h4{
+  .precio, .producto h4, .destacados h4, .alimento h4, .accesorio h4, .salud h4, .perro h4, .gato h4, .otroAnimal h4, .novedad h4, .destacado h4{
     font-size: 25px;
     margin: 10px;
     font-family: 'PT Sans Narrow', sans-serif;
@@ -606,19 +605,10 @@ nav ul {
   margin-bottom: 10px;
 }
 
-.precio{
-    font-weight: 700;
-    font-size: 20px;
-    margin-left: 10px;
-}
-
 #cantidad{
     font-weight: 400;
     font-size: 20px;
 }
-
-
-
 
 .total{
     font-size: 20px;
