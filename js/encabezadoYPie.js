@@ -25,8 +25,8 @@ let hdr = `<h1>Mascotienda</h1>
             </ul>
             
             <div id="nav-icons">
-                <a href="registrousu.html"><i class="fi fi-rr-user" style="color: #000000; font-size: 1.3em;"></i></a>
-<<<<<<< HEAD
+                <a href="registrousu.html"><i class="fi fi-rr-user" style="color: #000000; font-size: 1.3em; margin: 15px;"></i></a>
+
                       <div class="cart">
                                 <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -44,7 +44,7 @@ let hdr = `<h1>Mascotienda</h1>
                         </svg>
 
                       </div>
-                </div>
+                <!--</div>-->
                 <div class="carrito">
                         
                 <div class="itemFila">
@@ -56,15 +56,14 @@ let hdr = `<h1>Mascotienda</h1>
               
               <p class="total ">Total $</p>
               
-     </div>    
-=======
-                <a href="#"><i class="fi fi-rr-shopping-cart" style="color: #000000; font-size: 1.3em;"></i></a>
-                </div>
->>>>>>> origin
+              </div>    
+
+            </div>
+
         </nav>
 
         `;
-       
+
 let ftr = `
 <div class="container-footer">
     <div class="col-4 col-m-4 col-s-12">
@@ -97,6 +96,6 @@ let ftr = `
   <p>&copy; 2023 Mascotienda. Todos los derechos reservados.</p>
 </div>
 `;
-        
-document.getElementsByTagName("header").item(0).innerHTML=hdr;
-document.getElementsByTagName("footer").item(0).innerHTML=ftr;
+
+document.getElementsByTagName("header").item(0).innerHTML = hdr;
+document.getElementsByTagName("footer").item(0).innerHTML = ftr;
