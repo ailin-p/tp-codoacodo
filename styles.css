@@ -565,3 +565,70 @@ nav ul {
 
 
 }
+
+
+/*---- Carrito de Compras ----*/
+
+.icon-cart{
+  width: 25px;
+  height: 25px;
+  stroke: #000;
+  display: flex;
+  flex-direction: column;
+}
+
+.icon-cart:hover{
+  cursor: pointer;
+}
+
+.elemento {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  display: flex;
+    
+}
+
+.items-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.items {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.precio{
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+#cantidad{
+    font-weight: 400;
+    font-size: 20px;
+}
+
+
+
+
+.total{
+    font-size: 20px;
+    font-weight: 900;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+
+}
+
+.carrito{
+  display: none;
+}
