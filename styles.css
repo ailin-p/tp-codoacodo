@@ -5,6 +5,12 @@
     padding: 0;
     text-align: center;
   }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
   /* Aquí se define la paleta de colores*/
 :root {
   	--color-1: #DF744A;
@@ -32,6 +38,10 @@
 [class*="col-"] {
 	float: left;
 	padding: 10px;
+}
+
+.row{
+overflow-y: scroll;
 }
 
 @media only screen and (max-width: 1300px) {	
@@ -103,14 +113,7 @@ h2 {
     margin: 20px;
     color: #000000;
   }
-  
-h3 {
-    margin: 20px;
-    text-align: center;
-    font-size: 1.2em;
-    font-weight: bolder;
-  }
-  
+
   /* Header */
 
 svg {
@@ -136,7 +139,6 @@ nav {
   margin-top: 10px;
 }
 
-
 nav ul {
   display: flex;
   list-style: none;
@@ -144,14 +146,35 @@ nav ul {
   padding: 0;
 }
 
-nav li {
+nav > ul > li {
+  text-transform: uppercase;
   position: relative;
 }
 
-nav a {
+nav > ul > li > a {
   display: block;
   padding: 10px;
   text-decoration: none;
+  color: inherit;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 1.2em;
+  letter-spacing: 1.5px;
+}
+
+nav ul > li:not(.dropdown)::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: var(--color-2); 
+  transform: scaleX(0); /* con el valor en 0 no se muestra en un principio */
+  transition: transform 0.3s ease-in-out; /* caracteristicas de la animación */
+}
+
+nav > ul > li:not(.dropdown):hover::before {
+  transform: scaleX(1); /* en el eje x con el valor 1 hace que se muestre la linea */
 }
 
 .dropdown ul {
@@ -159,6 +182,23 @@ nav a {
   position: absolute;
   top: 100%;
   left: 0;
+}
+
+.dropdown ul li {
+  background-color: #fed60159;
+  padding: 5px;
+  margin: 3px;
+  color: inherit;
+  border-radius: 10px 0px 10px 0px;
+}
+
+.dropdown ul li:hover {
+  background-color: #fed601; /* cambio a un color con mas contraste para que se note el hover */
+}
+
+.dropdown ul li a {
+  text-decoration: none;
+  font-family: 'PT Sans Narrow', sans-serif;
 }
 
 .dropdown:hover ul {
@@ -171,8 +211,13 @@ nav a {
   display: flex;
 }
 
-nav a:visited{
-  color: #000000;
+#nav-icons a {
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+nav a:visited {
+  color: inherit;
 }
 
   /* Main */
@@ -185,66 +230,222 @@ main {
 
 main h2 {
   text-align: center;
+  margin: 15px;
 }
   
   /* Grillas */
-
-.productos, .alimentos, .accesorios, .saludes, .perros, .gatos, .otrosAnimales, .novedades, .destacados {
-	display: flex;
-	grid-gap: 50px;
-	align-items: center;
-  flex-flow: row wrap;
-  margin-bottom: 80px;
-  justify-content: center;
-  align-items: center;
+ 
+  .productos, .alimentos, .accesorios, .saludes, .perros, .gatos, .otrosAnimales, .novedades, .destacados, .novedad {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
   }
   
-.producto, .alimento, .accesorio, .salud, .perro, .gato, .otroAnimal, .novedad, .destacado {
-	width: 330px;
-  height: 450px;
-	box-shadow: 2px 2px 6px 0px  var(--color-3);
-	padding: 7px;
-	border-radius: 10px;
-}
-
-.producto img, .alimento img, .accesorio img, .salud img, .perro img, .gato img, .otroAnimal img, .novedad img, .destacado img {
-  width: 200px;
-  height: 200px;
-}
-
-.producto button, .alimento button, .accesorio button, .salud button, .perro button, .gato button, .otroAnimal button  {
- 	color: white;
- 	background-color: var(--color-3);
- 	padding: 10px 20px;
- 	border: none;
- 	border-radius: 3px;
-  }
-
-.novedad button, .destacado button {
- 	color: white;
- 	background-color: var(--color-4);
- 	padding: 10px 20px;
- 	border: none;
- 	border-radius: 3px;
+  .producto, .alimento, .accesorio, .salud, .perro, .gato, .otroAnimal, .novedad, .destacado {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #d2d2d2;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(223, 116, 74, 0.2);
+    background-color: #fff;
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
   }
   
-  
-.text {
-  padding: 0 20px 20px;
-}
-
-.text button {
-  background: gray;
-  border: 0;
-  color: white;
-  padding: 10px;
-  width: 100%;
+  .producto:hover, .alimento:hover, .accesorio:hover, .salud:hover, .perro:hover, .gato:hover, .otroAnimal:hover, .novedad:hover, .destacado:hover {
+    box-shadow: 0 8px 16px #df744ae0;
+    transform: translate(0, -15px);
   }
   
+  .producto img, .destacados img, .alimento img, .accesorio img, .salud img, .perro img, .gato img, .otroAnimal img, .novedad img, .destacado img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+  }
+  
+ .descrip {
+  opacity: 0;
+ }
 
-  /* Formulario */
+ .producto:hover .descrip, .novedad:hover .descrip, .destacado:hover .descrip, .alimento:hover .descrip, .accesorio:hover .descrip, .salud:hover .descrip, .perro:hover .descrip, .gato:hover .descrip, .otroAnimal:hover .descrip {
+  opacity: 1;
+ }
 
-form {
+  
+  .producto h4, .destacados h4, .alimento h4, .accesorio h4, .salud h4, .perro h4, .gato h4, .otroAnimal h4, .novedad h4, .destacado h4{
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .producto button, .destacados button, .alimento button, .accesorio button, .salud button, .perro button, .gato button, .otroAnimal button, .novedad button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: var(--color-2);
+    color: #000000;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .producto button:hover, .destacados button:hover, .alimento button:hover, .accesorio button:hover, .salud button:hover, .perro button:hover, .gato button:hover, .otroAnimal button:hover, .novedad button:hover, .destacado button:hover {
+    background-color: var(--color-4);
+  }
+
+  
+  .producto button:focus, .destacados button:focus, .alimento button:focus, .accesorio button:focus, .salud button:focus, .perro button:focus, .gato button:focus, .otroAnimal button:focus, .novedad button:focus, .destacado button:focus {
+    outline: none;
+  }
+  
+  .producto button:active, .destacados button:active, .alimento button:active, .accesorio button:active, .salud button:active, .perro button:active, .gato button:active, .otroAnimal button:active, .novedad button:active, .destacado button:active {
+    background-color: var(--color-4);
+    transform: translateY(1px);
+  }
+
+  /* Formulario de registro */
+  
+  .formulario {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .formulario__label {
+    display: block;
+    font-weight: 700;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .formulario__grupo-input {
+    position: relative;
+  }
+  
+  .formulario__input {
+    width: 100%;
+    background: #fff;
+    border: 1px solid;
+    border-radius: 3px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 40px 0 10px;
+    transition: .3s ease all;
+  }
+  
+  .formulario__input:focus {
+    border: 3px solid #0075FF;
+    outline: none;
+    box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+  }
+  
+  .formulario__input-error {
+    font-size: 12px;
+    margin-bottom: 0;
+    display: none;
+  }
+  
+  .formulario__input-error-activo {
+    display: block;
+  }
+  
+  .formulario__validacion-estado {
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
+    z-index: 100;
+    font-size: 16px;
+    opacity: 0;
+  }
+  
+  .formulario__checkbox {
+    margin-right: 10px;
+  }
+  
+  .formulario__grupo-terminos, 
+  .formulario__mensaje,
+  .formulario__grupo-btn-enviar {
+    grid-column: span 2;
+  }
+  
+  .formulario__mensaje {
+    height: 45px;
+    line-height: 45px;
+    background: #F66060;
+    padding: 0 15px;
+    border-radius: 3px;
+    display: none;
+  }
+  
+  .formulario__mensaje-activo {
+    display: block;
+  }
+  
+  .formulario__mensaje p {
+    margin: 0;
+  }
+  
+  .formulario__grupo-btn-enviar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .formulario__btn {
+    height: 45px;
+    line-height: 45px;
+    width: 30%;
+    background: #000;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .1s ease all;
+  }
+  
+  .formulario__btn:hover {
+    box-shadow: 3px 0px 30px rgba(163,163,163, 1);
+  }
+  
+  .formulario__mensaje-exito {
+    font-size: 14px;
+    color: #119200;
+    display: none;
+  }
+  
+  .formulario__mensaje-exito-activo {
+    display: block;
+  }
+  
+  /* ----- -----  Estilos para Validacion ----- ----- */
+
+  .formulario__grupo-correcto .formulario__validacion-estado {
+    color: #1ed12d;
+    opacity: 1;
+  }
+  
+  .formulario__grupo-incorrecto .formulario__label {
+    color: #bb2929;
+  }
+  
+  .formulario__grupo-incorrecto .formulario__validacion-estado {
+    color: #bb2929;
+    opacity: 1;
+  }
+  
+  .formulario__grupo-incorrecto .formulario__input {
+    border: 3px solid #bb2929;
+  }
+
+  /* Formulario de contacto */
+
+  form {
     max-width: 50%;
     margin: 0 auto;
     padding: 20px;
@@ -267,8 +468,8 @@ textarea {
   }
   
 button[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
+    background-color: var(--color-2);
+    color: #000;
     padding: 10px 20px;
     border: none;
     border-radius: 3px;
@@ -276,10 +477,16 @@ button[type="submit"] {
   }
   
 button[type="submit"]:hover {
-    background-color: #3e8e41;
+    background-color: var(--color-3);
   }
 
   /* Footer */
+
+  .container-footer h3 {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 1.5em;
+    letter-spacing: 1.5px;
+  }
 
   footer {
     background-color: var(--color-1);
@@ -297,6 +504,10 @@ button[type="submit"]:hover {
     margin: 0 10px;
     list-style: none;
     margin-top: 30px;
+  }
+
+  .social-media li a {
+    text-decoration: none;
   }
 
   #info li {
@@ -352,4 +563,72 @@ nav ul {
   flex-direction: column;
 }
 
+
+}
+
+
+/*---- Carrito de Compras ----*/
+
+.icon-cart{
+  width: 25px;
+  height: 25px;
+  stroke: #000;
+  display: flex;
+  flex-direction: column;
+}
+
+.icon-cart:hover{
+  cursor: pointer;
+}
+
+.elemento {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  display: flex;
+    
+}
+
+.items-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.items {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.precio{
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+#cantidad{
+    font-weight: 400;
+    font-size: 20px;
+}
+
+
+
+
+.total{
+    font-size: 20px;
+    font-weight: 900;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+
+}
+
+.carrito{
+  display: none;
 }
