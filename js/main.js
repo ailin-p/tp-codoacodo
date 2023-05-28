@@ -13,17 +13,11 @@ for (let prod of prods) {
 	tarjeta = tarjeta.concat(`<article class="producto">
                 <div class="item">
 					 <img src="${prod.foto}" alt="${prod.nombre}">
-                <h3>${prod.nombre}</h3>
-<<<<<<< HEAD
-                <h4>$<div class="precio">${prod.precio}</div></h4>
-                <p class="descrip">${prod.descripcion}</p>
-                <button class="btnArt">Comprar</button>
+                    <h3>${prod.nombre}</h3>
+                    <h4>$<div class="precio">${prod.precio}</div></h4>
+                    <p class="descrip">${prod.descripcion}</p>
+                    <button class="btnArt">Comprar</button>
                 </div>
-=======
-                <h4>$${prod.precio}</h4>
-                <p class="descrip">${prod.descripcion}</p>
-                <button>Comprar</button>
->>>>>>> origin
                 </article>`);  
 }
 document.getElementsByClassName("productos")[0].innerHTML=tarjeta;
@@ -36,16 +30,10 @@ for (let prod of prods) {
                 <div class="item">    
 					 <img src="${prod.foto}" alt="${prod.nombre}">
                 <h3>${prod.nombre}</h3>
-<<<<<<< HEAD
                 <h4>$<div class="precio">${prod.precio}</div></h4>
                 <p class="descrip">${prod.descripcion}</p>
                 <button class="btnArt">Comprar</button>
                 </div>
-=======
-                <h4>$${prod.precio}</h4>
-                <p class="descrip">${prod.descripcion}</p>
-                <button>Comprar</button>
->>>>>>> origin
                 </article>`);  
 }
 document.getElementsByClassName("novedades")[0].innerHTML=tarjeta;
