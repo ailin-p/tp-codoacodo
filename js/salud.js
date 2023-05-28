@@ -14,7 +14,7 @@ for (let prod of prods) {
     <div class="item">
     <img src="${prod.foto}" alt="${prod.nombre}">
 <h3>${prod.nombre}</h3>
-<h4>$<div class="precio">${prod.precio}</div></h4>
+<h4><div class="precio">$${prod.precio}</div></h4>
 <p class="descrip">${prod.descripcion}</p>
 <button class="btnArt">Comprar</button>
 </div>
@@ -29,7 +29,7 @@ for (let prod of prods) {
     <div class="item">
     <img src="${prod.foto}" alt="${prod.nombre}">
 <h3>${prod.nombre}</h3>
-<h4>$<div class="precio">${prod.precio}</div></h4>
+<h4><div class="precio">$${prod.precio}</div></h4>
 <p class="descrip">${prod.descripcion}</p>
 <button class="btnArt">Comprar</button>
 </div>
@@ -44,7 +44,7 @@ for (let prod of prods) {
     <div class="item">
     <img src="${prod.foto}" alt="${prod.nombre}">
 <h3>${prod.nombre}</h3>
-<h4>$<div class="precio">${prod.precio}</div></h4>
+<h4><div class="precio">$${prod.precio}</div></h4>
 <p class="descrip">${prod.descripcion}</p>
 <button class="btnArt">Comprar</button>
 </div>
@@ -59,7 +59,7 @@ for (let prod of prods) {
     <div class="item">
     <img src="${prod.foto}" alt="${prod.nombre}">
 <h3>${prod.nombre}</h3>
-<h4>$<div class="precio">${prod.precio}</div></h4>
+<h4><div class="precio">$${prod.precio}</div></h4>
 <p class="descrip">${prod.descripcion}</p>
 <button class="btnArt">Comprar</button>
 </div>
