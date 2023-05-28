@@ -26,6 +26,7 @@ let hdr = `<h1>Mascotienda</h1>
             
             <div id="nav-icons">
                 <a href="registrousu.html"><i class="fi fi-rr-user" style="color: #000000; font-size: 1.3em;"></i></a>
+<<<<<<< HEAD
                       <div class="cart">
                                 <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -56,6 +57,10 @@ let hdr = `<h1>Mascotienda</h1>
               <p class="total ">Total $</p>
               
      </div>    
+=======
+                <a href="#"><i class="fi fi-rr-shopping-cart" style="color: #000000; font-size: 1.3em;"></i></a>
+                </div>
+>>>>>>> origin
         </nav>
 
         `;
